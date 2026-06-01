@@ -1,0 +1,61 @@
+Feature,Information_Gain
+Total Days (V + XVIII + XIX + Unknown),0.31361279119505614
+Less Total Operating Expense,0.29035424730135695
+Less Contractual Allowance and Discounts on Patients' Accounts,0.2901745078334992
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.28365205522552994
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.28008237274917214
+Total Discharges (V + XVIII + XIX + Unknown),0.28002775340251596
+Inventory,0.2761536242629665
+Total Bed Days Available,0.25683223413765166
+Total Assets,0.2540747340602598
+Hospital Total Bed Days Available For Adults & Peds,0.24991048502514168
+Total Liabilities,0.24802970975350824
+Total Salaries From Worksheet A,0.2436921322309944
+Total Fixed Assets,0.24341676298528458
+Depreciation Cost,0.23868364110763363
+Total Salaries (adjusted),0.23734850922074902
+FTE - Employees on Payroll,0.23043242340394787
+Total Discharges Title XVIII,0.22994199785461067
+Hospital Total Discharges Title XVIII For Adults & Peds,0.22985116176122666
+Hospital Number of Beds For Adults & Peds,0.22787540112767024
+Total Days Title XVIII,0.2253536804792171
+Number of Beds,0.22488138028742188
+Accounts Receivable,0.22265906651804102
+DRG Amounts After October 1,0.22079241885464906
+Hospital Total Days Title XVIII For Adults & Peds,0.21989831066378862
+Total Current Assets,0.20823686705388145
+Number of Beds + Total for all Subproviders,0.20199699918937064
+Major Movable Equipment,0.1995686944087387
+Total Long Term Liabilities,0.19446114796525737
+Buildings,0.185090726402513
+Hospital Total Days Title XIX For Adults & Peds,0.1553807002939651
+Total Current Liabilities,0.15371675433959453
+Fixed Equipment,0.14876818448751283
+"Salaries, Wages, and Fees Payable",0.14822913665885018
+Total Days Title XIX,0.14394874783456046
+Total Bad Debt Expense,0.1417434771152557
+Accounts Payable,0.14154340966594514
+Less: Allowances for Uncollectible Notes and Accounts Receivable,0.13883705097809074
+Land,0.13812728316848144
+Land Improvements,0.13739906892836906
+Hospital Total Discharges Title XIX For Adults & Peds,0.12723703379672546
+Total Discharges Title XIX,0.12662303637398953
+Prepaid Expenses,0.10447310353501527
+State Code,0.10294391611740838
+Other Assets,0.08806790472442083
+Cash on Hand and in Banks,0.08346280146144913
+Total Other Assets,0.07754835514581382
+Community Population,0.054289518432412365
+Type of Control,0.05381158627546734
+shortage_num,0.04140261463801087
+Other Current Liabilities,0.04070086571958775
+Fiscal Year Begin Date_month,0.03565932632069435
+Fiscal Year End Date_month,0.03562760320516345
+Community Elderly Perc.,0.033197742547052655
+Rural Versus Urban,0.029869030955069098
+Other Long Term Liabilities,0.028789877903024674
+Fiscal Year Begin Date_year,0.01969621844818814
+Community Poverty Perc.,0.01550559977110133
+Fiscal Year End Date_year,0.010541432406075302
+Provider Type,0.0
+CCN Facility Type,0.0

@@ -1,0 +1,11 @@
+Two-way contingency table (test set)
+,Predicted_shortage_flag_0,Predicted_shortage_flag_1
+Actual_shortage_flag_0,1219,105
+Actual_shortage_flag_1,49,179
+
+Classification metrics
+metric,value
+sensitivity,0.7850877192982456
+specificity,0.9206948640483383
+positive_predictive_value,0.6302816901408451
+negative_predictive_value,0.9613564668769716

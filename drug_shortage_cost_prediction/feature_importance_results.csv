@@ -1,0 +1,136 @@
+Model,Feature,Importance
+DecisionTreeRegressor,Total Assets,0.018693149901089442
+DecisionTreeRegressor,Inventory,0.042551493335171914
+DecisionTreeRegressor,Less Total Operating Expense,0.019025192762803234
+DecisionTreeRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.30260574382816824
+DecisionTreeRegressor,Total Days (V + XVIII + XIX + Unknown),0.06658337867718754
+DecisionTreeRegressor,Major Movable Equipment,0.006376019294917749
+DecisionTreeRegressor,Depreciation Cost,0.011216790338984683
+DecisionTreeRegressor,Total Fixed Assets,2.9242224683096627e-05
+DecisionTreeRegressor,Total Discharges Title XVIII,0.01722335087118832
+DecisionTreeRegressor,Total Liabilities,0.058527219005599644
+DecisionTreeRegressor,DRG Amounts After October 1,0.003320962263493615
+DecisionTreeRegressor,Accounts Receivable,0.013855271442851405
+DecisionTreeRegressor,Hospital Number of Beds For Adults & Peds,0.09703563011976234
+DecisionTreeRegressor,Total Current Assets,0.012188652451441555
+DecisionTreeRegressor,Profit,0.33076790348265706
+RandomForestRegressor,Total Assets,0.044427493979486546
+RandomForestRegressor,Inventory,0.20768123499901722
+RandomForestRegressor,Less Total Operating Expense,0.0158556477433889
+RandomForestRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.12240401355757088
+RandomForestRegressor,Total Days (V + XVIII + XIX + Unknown),0.101737946311231
+RandomForestRegressor,Major Movable Equipment,0.020970096393345322
+RandomForestRegressor,Depreciation Cost,0.017940405229591668
+RandomForestRegressor,Total Fixed Assets,0.011412148446322691
+RandomForestRegressor,Total Discharges Title XVIII,0.020498682443046982
+RandomForestRegressor,Total Liabilities,0.06765743872418914
+RandomForestRegressor,DRG Amounts After October 1,0.014797861082927
+RandomForestRegressor,Accounts Receivable,0.021088705515162384
+RandomForestRegressor,Hospital Number of Beds For Adults & Peds,0.06582476389287333
+RandomForestRegressor,Total Current Assets,0.02513061317665133
+RandomForestRegressor,Profit,0.24257294850519545
+GradientBoostingRegressor,Total Assets,0.06622224342390366
+GradientBoostingRegressor,Inventory,0.17594112108891796
+GradientBoostingRegressor,Less Total Operating Expense,0.026257608588540052
+GradientBoostingRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.13114542556592554
+GradientBoostingRegressor,Total Days (V + XVIII + XIX + Unknown),0.05489296635815427
+GradientBoostingRegressor,Major Movable Equipment,0.035130243279795054
+GradientBoostingRegressor,Depreciation Cost,0.016776681225245133
+GradientBoostingRegressor,Total Fixed Assets,0.012198891014036832
+GradientBoostingRegressor,Total Discharges Title XVIII,0.02459353117781496
+GradientBoostingRegressor,Total Liabilities,0.10024948304358244
+GradientBoostingRegressor,DRG Amounts After October 1,0.026171193706655896
+GradientBoostingRegressor,Accounts Receivable,0.01828589964401352
+GradientBoostingRegressor,Hospital Number of Beds For Adults & Peds,0.0934599530998115
+GradientBoostingRegressor,Total Current Assets,0.03393556125938429
+GradientBoostingRegressor,Profit,0.18473919752421888
+Ridge,Total Assets,2662960.199346762
+Ridge,Inventory,10383674.670988943
+Ridge,Less Total Operating Expense,2945183.9584112745
+Ridge,Less Contractual Allowance and Discounts on Patients' Accounts,4423320.785723284
+Ridge,Total Days (V + XVIII + XIX + Unknown),8370632.046568639
+Ridge,Major Movable Equipment,6478511.397472271
+Ridge,Depreciation Cost,1585837.5417556937
+Ridge,Total Fixed Assets,218786.88744232952
+Ridge,Total Discharges Title XVIII,3075492.034871938
+Ridge,Total Liabilities,6497785.683231212
+Ridge,DRG Amounts After October 1,1619457.286430555
+Ridge,Accounts Receivable,103534.76764664946
+Ridge,Hospital Number of Beds For Adults & Peds,3878087.37847164
+Ridge,Total Current Assets,373548.4512392374
+Ridge,Profit,15221884.246222675
+Lasso,Total Assets,4226311.293175353
+Lasso,Inventory,12436094.260116138
+Lasso,Less Total Operating Expense,7034478.870219212
+Lasso,Less Contractual Allowance and Discounts on Patients' Accounts,2799892.5105903656
+Lasso,Total Days (V + XVIII + XIX + Unknown),14119588.060778834
+Lasso,Major Movable Equipment,7876755.938356596
+Lasso,Depreciation Cost,2269776.5568934656
+Lasso,Total Fixed Assets,433885.06410663703
+Lasso,Total Discharges Title XVIII,2364379.441776067
+Lasso,Total Liabilities,6668631.780652079
+Lasso,DRG Amounts After October 1,1757954.0111268258
+Lasso,Accounts Receivable,207269.45180682838
+Lasso,Hospital Number of Beds For Adults & Peds,5717070.83582634
+Lasso,Total Current Assets,1146168.971442757
+Lasso,Profit,16028376.68486443
+ElasticNet,Total Assets,1484976.1618999273
+ElasticNet,Inventory,6039863.666951082
+ElasticNet,Less Total Operating Expense,214129.8509707401
+ElasticNet,Less Contractual Allowance and Discounts on Patients' Accounts,4410846.891643241
+ElasticNet,Total Days (V + XVIII + XIX + Unknown),3985053.3802418644
+ElasticNet,Major Movable Equipment,2567535.742689113
+ElasticNet,Depreciation Cost,1128077.4262655017
+ElasticNet,Total Fixed Assets,913848.2501562198
+ElasticNet,Total Discharges Title XVIII,2582564.264555041
+ElasticNet,Total Liabilities,4857778.155553992
+ElasticNet,DRG Amounts After October 1,1556628.550674153
+ElasticNet,Accounts Receivable,227221.1107394294
+ElasticNet,Hospital Number of Beds For Adults & Peds,776100.2517516009
+ElasticNet,Total Current Assets,462588.6566308454
+ElasticNet,Profit,11202364.84325201
+AdaBoostRegressor,Total Assets,0.021623107956311068
+AdaBoostRegressor,Inventory,0.2904550308602216
+AdaBoostRegressor,Less Total Operating Expense,0.005511671222547355
+AdaBoostRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.07388910142421691
+AdaBoostRegressor,Total Days (V + XVIII + XIX + Unknown),0.1366148779362032
+AdaBoostRegressor,Major Movable Equipment,0.002139527318406589
+AdaBoostRegressor,Depreciation Cost,0.005953492518879057
+AdaBoostRegressor,Total Fixed Assets,0.0022740316182714737
+AdaBoostRegressor,Total Discharges Title XVIII,0.009270613524802318
+AdaBoostRegressor,Total Liabilities,0.05008472891698226
+AdaBoostRegressor,DRG Amounts After October 1,0.0042287370886616845
+AdaBoostRegressor,Accounts Receivable,0.0017085955598208486
+AdaBoostRegressor,Hospital Number of Beds For Adults & Peds,0.06559147823220098
+AdaBoostRegressor,Total Current Assets,0.00771904336732313
+AdaBoostRegressor,Profit,0.32293596245515177
+ExtraTreesRegressor,Total Assets,0.037126513392767506
+ExtraTreesRegressor,Inventory,0.10917125690694975
+ExtraTreesRegressor,Less Total Operating Expense,0.04127110982764237
+ExtraTreesRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.11489858209200045
+ExtraTreesRegressor,Total Days (V + XVIII + XIX + Unknown),0.1319986642791009
+ExtraTreesRegressor,Major Movable Equipment,0.013250434158476999
+ExtraTreesRegressor,Depreciation Cost,0.022193986926361164
+ExtraTreesRegressor,Total Fixed Assets,0.023239362558438934
+ExtraTreesRegressor,Total Discharges Title XVIII,0.030109892208136372
+ExtraTreesRegressor,Total Liabilities,0.05318247672232156
+ExtraTreesRegressor,DRG Amounts After October 1,0.015435328791545494
+ExtraTreesRegressor,Accounts Receivable,0.02086455324041364
+ExtraTreesRegressor,Hospital Number of Beds For Adults & Peds,0.04189166994764702
+ExtraTreesRegressor,Total Current Assets,0.02196296051037346
+ExtraTreesRegressor,Profit,0.32340320843782444
+XGBRegressor,Total Assets,0.02165156975388527
+XGBRegressor,Inventory,0.07560037821531296
+XGBRegressor,Less Total Operating Expense,0.020235320553183556
+XGBRegressor,Less Contractual Allowance and Discounts on Patients' Accounts,0.07083234935998917
+XGBRegressor,Total Days (V + XVIII + XIX + Unknown),0.0699758529663086
+XGBRegressor,Major Movable Equipment,0.031647939234972
+XGBRegressor,Depreciation Cost,0.018443875014781952
+XGBRegressor,Total Fixed Assets,0.01924009621143341
+XGBRegressor,Total Discharges Title XVIII,0.023924706503748894
+XGBRegressor,Total Liabilities,0.0350821428000927
+XGBRegressor,DRG Amounts After October 1,0.01716071553528309
+XGBRegressor,Accounts Receivable,0.015745891258120537
+XGBRegressor,Hospital Number of Beds For Adults & Peds,0.06055166572332382
+XGBRegressor,Total Current Assets,0.028500882908701897
+XGBRegressor,Profit,0.49140664935112

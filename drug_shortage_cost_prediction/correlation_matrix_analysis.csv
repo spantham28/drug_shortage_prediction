@@ -1,0 +1,904 @@
+Feature1,Feature2,Correlation,Abs_Correlation
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,1.0,1.0
+Total Discharges Title XIX,Hospital Total Discharges Title XIX For Adults & Peds,1.0,1.0
+Total Discharges Title XVIII,Hospital Total Discharges Title XVIII For Adults & Peds,1.0,1.0
+Number of Beds,Number of Beds + Total for all Subproviders,0.998256270485416,0.998256270485416
+Number of Beds,Hospital Number of Beds For Adults & Peds,0.9974537883680765,0.9974537883680765
+Total Salaries From Worksheet A,Total Salaries (adjusted),0.9966343068254369,0.9966343068254369
+Number of Beds + Total for all Subproviders,Hospital Number of Beds For Adults & Peds,0.9948424623172316,0.9948424623172316
+Total Bed Days Available,Hospital Total Bed Days Available For Adults & Peds,0.9917632049697689,0.9917632049697689
+Total Days Title XVIII,Hospital Total Days Title XVIII For Adults & Peds,0.9902213714767296,0.9902213714767296
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.9899190462208178,0.9899190462208178
+Total Days Title XVIII,Hospital Total Discharges Title XVIII For Adults & Peds,0.981133737718612,0.981133737718612
+Total Days Title XVIII,Total Discharges Title XVIII,0.981133737718612,0.981133737718612
+Total Days (V + XVIII + XIX + Unknown),Total Discharges (V + XVIII + XIX + Unknown),0.9790870103983936,0.9790870103983936
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.9790870103983936,0.9790870103983936
+Total Discharges Title XVIII,Hospital Total Days Title XVIII For Adults & Peds,0.9752111312328509,0.9752111312328509
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Discharges Title XVIII For Adults & Peds,0.9752111312328507,0.9752111312328507
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.9741324675455324,0.9741324675455324
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.9741324675455323,0.9741324675455323
+Total Days (V + XVIII + XIX + Unknown),Total Bed Days Available,0.9685599612850293,0.9685599612850293
+Total Salaries (adjusted),Less Total Operating Expense,0.9633180716493926,0.9633180716493926
+Total Salaries From Worksheet A,Less Total Operating Expense,0.9608996144131569,0.9608996144131569
+Accounts Receivable,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.9588581391525051,0.9588581391525051
+Total Bed Days Available,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.9573060154467802,0.9573060154467802
+Total Bed Days Available,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.9570943861289056,0.9570943861289056
+Total Bed Days Available,Total Discharges (V + XVIII + XIX + Unknown),0.9570943861289056,0.9570943861289056
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Hospital Total Bed Days Available For Adults & Peds,0.9565779050767912,0.9565779050767912
+Total Days Title XIX,Hospital Total Days Title XIX For Adults & Peds,0.9544709009956406,0.9544709009956406
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Bed Days Available For Adults & Peds,0.9537645209723878,0.9537645209723878
+FTE - Employees on Payroll,Total Salaries (adjusted),0.9506887040580919,0.9506887040580919
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Bed Days Available For Adults & Peds,0.9480702887034647,0.9480702887034647
+Hospital Total Bed Days Available For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.9480702887034647,0.9480702887034647
+FTE - Employees on Payroll,Total Salaries From Worksheet A,0.9480590134179772,0.9480590134179772
+Buildings,Total Fixed Assets,0.9454424485635646,0.9454424485635646
+FTE - Employees on Payroll,Less Total Operating Expense,0.9413481200957167,0.9413481200957167
+Total Days Title XVIII,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.9270756660728365,0.9270756660728365
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.9215620104305181,0.9215620104305181
+Total Long Term Liabilities,Total Liabilities,0.9177780104671899,0.9177780104671899
+Total Days Title XVIII,Total Days (V + XVIII + XIX + Unknown),0.9146379538841238,0.9146379538841238
+Total Days Title XVIII,Total Discharges (V + XVIII + XIX + Unknown),0.9079583170554311,0.9079583170554311
+Total Days Title XVIII,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.9079583170554311,0.9079583170554311
+Total Discharges Title XVIII,Total Discharges (V + XVIII + XIX + Unknown),0.8978961976239502,0.8978961976239502
+Total Discharges Title XVIII,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.8978961976239502,0.8978961976239502
+Hospital Total Discharges Title XVIII For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.8978961976239502,0.8978961976239502
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Discharges Title XVIII For Adults & Peds,0.8978961976239501,0.8978961976239501
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Days Title XVIII For Adults & Peds,0.895971328642408,0.895971328642408
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.8942777839774617,0.8942777839774617
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Days Title XVIII For Adults & Peds,0.8942777839774616,0.8942777839774616
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Hospital Total Discharges Title XVIII For Adults & Peds,0.8913480929029262,0.8913480929029262
+Total Discharges Title XVIII,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.891348092902926,0.891348092902926
+Total Assets,Less Total Operating Expense,0.8845438693700106,0.8845438693700106
+Total Days Title XVIII,Total Bed Days Available,0.8844881306544694,0.8844881306544694
+Total Days Title XVIII,Hospital Total Bed Days Available For Adults & Peds,0.883800894687664,0.883800894687664
+Buildings,Total Assets,0.880564472060181,0.880564472060181
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Bed Days Available For Adults & Peds,0.8763187431894586,0.8763187431894586
+Total Days (V + XVIII + XIX + Unknown),Total Discharges Title XVIII,0.8761409219973103,0.8761409219973103
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Discharges Title XVIII For Adults & Peds,0.8761409219973103,0.8761409219973103
+Buildings,Less Total Operating Expense,0.8733175342872773,0.8733175342872773
+Total Fixed Assets,Total Assets,0.8701615714163914,0.8701615714163914
+FTE - Employees on Payroll,Depreciation Cost,0.8696405771857613,0.8696405771857613
+Major Movable Equipment,Less Total Operating Expense,0.8692285719737118,0.8692285719737118
+Total Bed Days Available,Hospital Total Days Title XVIII For Adults & Peds,0.865339094978079,0.865339094978079
+Hospital Total Bed Days Available For Adults & Peds,Hospital Total Discharges Title XVIII For Adults & Peds,0.8618040014082993,0.8618040014082993
+Total Discharges Title XVIII,Hospital Total Bed Days Available For Adults & Peds,0.8618040014082993,0.8618040014082993
+Total Fixed Assets,Less Total Operating Expense,0.859238202681264,0.859238202681264
+Total Bed Days Available,Hospital Total Discharges Title XVIII For Adults & Peds,0.8575725382722904,0.8575725382722904
+Total Bed Days Available,Total Discharges Title XVIII,0.8575725382722904,0.8575725382722904
+Depreciation Cost,Less Total Operating Expense,0.8564622941341804,0.8564622941341804
+Depreciation Cost,Total Fixed Assets,0.8538667426427694,0.8538667426427694
+FTE - Employees on Payroll,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.8526495678074494,0.8526495678074494
+FTE - Employees on Payroll,Major Movable Equipment,0.8508405464191383,0.8508405464191383
+Major Movable Equipment,Total Assets,0.8498451794485768,0.8498451794485768
+Inventory,Less Total Operating Expense,0.8490964495098675,0.8490964495098675
+FTE - Employees on Payroll,Total Days (V + XVIII + XIX + Unknown),0.8481967523592298,0.8481967523592298
+Total Salaries (adjusted),Buildings,0.8460219630859982,0.8460219630859982
+Total Salaries (adjusted),Total Assets,0.8440261311290277,0.8440261311290277
+Total Salaries From Worksheet A,Total Assets,0.8433282359721557,0.8433282359721557
+Total Salaries From Worksheet A,Buildings,0.8423416095063306,0.8423416095063306
+Total Salaries (adjusted),Major Movable Equipment,0.8411494856391742,0.8411494856391742
+Depreciation Cost,Total Salaries (adjusted),0.839939021405997,0.839939021405997
+Total Salaries From Worksheet A,Major Movable Equipment,0.8395996786982692,0.8395996786982692
+Total Salaries (adjusted),Total Fixed Assets,0.8390950174259363,0.8390950174259363
+FTE - Employees on Payroll,Total Fixed Assets,0.8350379462851045,0.8350379462851045
+Total Salaries From Worksheet A,Depreciation Cost,0.8321463989263915,0.8321463989263915
+FTE - Employees on Payroll,Buildings,0.8311648807874458,0.8311648807874458
+Total Salaries From Worksheet A,Total Fixed Assets,0.8311431182465709,0.8311431182465709
+Depreciation Cost,Buildings,0.8297614190372652,0.8297614190372652
+Major Movable Equipment,Total Fixed Assets,0.8281497948221552,0.8281497948221552
+Buildings,Major Movable Equipment,0.8265358361925443,0.8265358361925443
+Inventory,Total Fixed Assets,0.8208073159272267,0.8208073159272267
+Inventory,Major Movable Equipment,0.8204987121035643,0.8204987121035643
+Total Days Title XIX,Hospital Total Discharges Title XIX For Adults & Peds,0.8194999388391444,0.8194999388391444
+Total Days Title XIX,Total Discharges Title XIX,0.8194999388391444,0.8194999388391444
+FTE - Employees on Payroll,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.8190120478220203,0.8190120478220203
+FTE - Employees on Payroll,Total Discharges (V + XVIII + XIX + Unknown),0.8190120478220203,0.8190120478220203
+FTE - Employees on Payroll,Inventory,0.8175776285848816,0.8175776285848816
+FTE - Employees on Payroll,Total Bed Days Available,0.8157821660991555,0.8157821660991555
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Less Total Operating Expense,0.8118432228188236,0.8118432228188236
+Total Days (V + XVIII + XIX + Unknown),Less Contractual Allowance and Discounts on Patients' Accounts,0.8110692994976662,0.8110692994976662
+FTE - Employees on Payroll,Hospital Total Bed Days Available For Adults & Peds,0.8083612567522444,0.8083612567522444
+Total Days (V + XVIII + XIX + Unknown),Less Total Operating Expense,0.8082836834430515,0.8082836834430515
+FTE - Employees on Payroll,Total Assets,0.806440231077637,0.806440231077637
+FTE - Employees on Payroll,Total Days Title XVIII,0.8053297238254035,0.8053297238254035
+Total Days (V + XVIII + XIX + Unknown),Inventory,0.8043537644216405,0.8043537644216405
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.8041009410947951,0.8041009410947951
+Less Contractual Allowance and Discounts on Patients' Accounts,Less Total Operating Expense,0.8040148301179857,0.8040148301179857
+Hospital Total Days Title XIX For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.8037740452139596,0.8037740452139596
+Total Discharges Title XIX,Hospital Total Days Title XIX For Adults & Peds,0.8037740452139596,0.8037740452139596
+Total Salaries (adjusted),Inventory,0.8034398951822223,0.8034398951822223
+Depreciation Cost,Major Movable Equipment,0.802070908085536,0.802070908085536
+Total Salaries From Worksheet A,Inventory,0.8013459847072362,0.8013459847072362
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Inventory,0.7953456104548059,0.7953456104548059
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Depreciation Cost,0.7938971497952942,0.7938971497952942
+FTE - Employees on Payroll,Hospital Total Days Title XVIII For Adults & Peds,0.7936086500254433,0.7936086500254433
+Total Days (V + XVIII + XIX + Unknown),Depreciation Cost,0.7912410200293561,0.7912410200293561
+Inventory,Total Assets,0.7867384386284711,0.7867384386284711
+Total Bed Days Available,Less Contractual Allowance and Discounts on Patients' Accounts,0.7866859852976518,0.7866859852976518
+Total Discharges (V + XVIII + XIX + Unknown),Less Contractual Allowance and Discounts on Patients' Accounts,0.7860283638898726,0.7860283638898726
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.7860283638898726,0.7860283638898726
+Inventory,Less Contractual Allowance and Discounts on Patients' Accounts,0.7848928705564708,0.7848928705564708
+Hospital Total Discharges Title XVIII For Adults & Peds,DRG Amounts After October 1,0.7795857703669463,0.7795857703669463
+Total Discharges Title XVIII,DRG Amounts After October 1,0.7795857703669463,0.7795857703669463
+Depreciation Cost,Inventory,0.7793900239698726,0.7793900239698726
+Depreciation Cost,Total Assets,0.7757754310126451,0.7757754310126451
+Total Days Title XVIII,Less Total Operating Expense,0.7747840412468778,0.7747840412468778
+Total Bed Days Available,Inventory,0.7745325416615492,0.7745325416615492
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Salaries (adjusted),0.7732301382721747,0.7732301382721747
+Inventory,Buildings,0.7721848961344577,0.7721848961344577
+Total Bed Days Available,Less Total Operating Expense,0.7717794795584951,0.7717794795584951
+Hospital Total Bed Days Available For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.7708796386269212,0.7708796386269212
+Total Bed Days Available,Depreciation Cost,0.77058987786511,0.77058987786511
+Total Days Title XVIII,Inventory,0.7695232203343921,0.7695232203343921
+Total Discharges (V + XVIII + XIX + Unknown),Inventory,0.7694203484858148,0.7694203484858148
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Inventory,0.7694203484858148,0.7694203484858148
+Total Assets,"Salaries, Wages, and Fees Payable",0.7693486543683018,0.7693486543683018
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Salaries From Worksheet A,0.7686685962752862,0.7686685962752862
+Hospital Total Days Title XVIII For Adults & Peds,DRG Amounts After October 1,0.7675242801808037,0.7675242801808037
+Total Salaries (adjusted),Less Contractual Allowance and Discounts on Patients' Accounts,0.7660451742808034,0.7660451742808034
+Total Days (V + XVIII + XIX + Unknown),Total Salaries (adjusted),0.7655063258635947,0.7655063258635947
+Total Assets,Total Liabilities,0.7646848579359861,0.7646848579359861
+Total Days Title XVIII,DRG Amounts After October 1,0.7643791119496602,0.7643791119496602
+Hospital Total Days Title XVIII For Adults & Peds,Less Total Operating Expense,0.7640082170358184,0.7640082170358184
+Total Days Title XVIII,Depreciation Cost,0.7632018492605332,0.7632018492605332
+Total Discharges (V + XVIII + XIX + Unknown),Depreciation Cost,0.7619732343919715,0.7619732343919715
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Depreciation Cost,0.7619732343919715,0.7619732343919715
+Total Days (V + XVIII + XIX + Unknown),Total Salaries From Worksheet A,0.7616157903575024,0.7616157903575024
+Total Salaries From Worksheet A,Less Contractual Allowance and Discounts on Patients' Accounts,0.7609637083608387,0.7609637083608387
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Less Total Operating Expense,0.759800465648322,0.759800465648322
+Total Discharges (V + XVIII + XIX + Unknown),Less Total Operating Expense,0.759800465648322,0.759800465648322
+Hospital Total Bed Days Available For Adults & Peds,Less Total Operating Expense,0.7591010798992169,0.7591010798992169
+FTE - Employees on Payroll,Hospital Total Discharges Title XVIII For Adults & Peds,0.7588263336990962,0.7588263336990962
+FTE - Employees on Payroll,Total Discharges Title XVIII,0.7588263336990962,0.7588263336990962
+Hospital Total Bed Days Available For Adults & Peds,Depreciation Cost,0.7582554889044268,0.7582554889044268
+Hospital Total Bed Days Available For Adults & Peds,Inventory,0.7552822627977646,0.7552822627977646
+FTE - Employees on Payroll,Less Contractual Allowance and Discounts on Patients' Accounts,0.7550284791999394,0.7550284791999394
+Hospital Total Days Title XVIII For Adults & Peds,Depreciation Cost,0.7522382134147524,0.7522382134147524
+Hospital Total Days Title XVIII For Adults & Peds,Inventory,0.7509027308093116,0.7509027308093116
+Total Current Assets,Total Assets,0.7504166312072332,0.7504166312072332
+Total Days Title XVIII,Total Salaries (adjusted),0.7471072871199831,0.7471072871199831
+Total Current Liabilities,Total Liabilities,0.7468396724194812,0.7468396724194812
+Total Days Title XVIII,Less Contractual Allowance and Discounts on Patients' Accounts,0.741988359008724,0.741988359008724
+Hospital Total Days Title XVIII For Adults & Peds,Total Salaries (adjusted),0.7407590503064795,0.7407590503064795
+Total Days Title XVIII,Total Salaries From Worksheet A,0.7401445020496872,0.7401445020496872
+Total Salaries From Worksheet A,"Salaries, Wages, and Fees Payable",0.7360573790114057,0.7360573790114057
+Accounts Receivable,Less Total Operating Expense,0.735499856533297,0.735499856533297
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Major Movable Equipment,0.7350968954197198,0.7350968954197198
+Total Salaries (adjusted),"Salaries, Wages, and Fees Payable",0.7345405714217781,0.7345405714217781
+Total Days (V + XVIII + XIX + Unknown),Major Movable Equipment,0.734097004581114,0.734097004581114
+Hospital Total Days Title XVIII For Adults & Peds,Total Salaries From Worksheet A,0.7337953013839815,0.7337953013839815
+Total Fixed Assets,"Salaries, Wages, and Fees Payable",0.7295448851578348,0.7295448851578348
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Salaries (adjusted),0.7291974139963715,0.7291974139963715
+Total Discharges (V + XVIII + XIX + Unknown),Total Salaries (adjusted),0.7291974139963715,0.7291974139963715
+Hospital Total Days Title XVIII For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.7278104937530746,0.7278104937530746
+Total Bed Days Available,Total Salaries (adjusted),0.7268463763154965,0.7268463763154965
+Total Fixed Assets,Less Contractual Allowance and Discounts on Patients' Accounts,0.7266002492548682,0.7266002492548682
+Total Bed Days Available,Total Salaries From Worksheet A,0.7255184040532509,0.7255184040532509
+Buildings,"Salaries, Wages, and Fees Payable",0.7250664586745962,0.7250664586745962
+"Salaries, Wages, and Fees Payable",Less Total Operating Expense,0.7249373547637267,0.7249373547637267
+Hospital Total Discharges Title XVIII For Adults & Peds,Inventory,0.7235243206732273,0.7235243206732273
+Total Discharges Title XVIII,Inventory,0.7235243206732273,0.7235243206732273
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Salaries From Worksheet A,0.7230773277747746,0.7230773277747746
+Total Discharges (V + XVIII + XIX + Unknown),Total Salaries From Worksheet A,0.7230773277747746,0.7230773277747746
+Depreciation Cost,Less Contractual Allowance and Discounts on Patients' Accounts,0.7209234375907128,0.7209234375907128
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Fixed Assets,0.720298846009397,0.720298846009397
+Hospital Total Bed Days Available For Adults & Peds,Total Salaries (adjusted),0.7201931947294029,0.7201931947294029
+Total Discharges Title XVIII,Less Total Operating Expense,0.7190988703848238,0.7190988703848238
+Hospital Total Discharges Title XVIII For Adults & Peds,Less Total Operating Expense,0.7190988703848238,0.7190988703848238
+Hospital Total Bed Days Available For Adults & Peds,Total Salaries From Worksheet A,0.7190704731955996,0.7190704731955996
+Total Days (V + XVIII + XIX + Unknown),Total Fixed Assets,0.7173279346081886,0.7173279346081886
+Hospital Total Discharges Title XVIII For Adults & Peds,Depreciation Cost,0.7141134733988069,0.7141134733988069
+Total Discharges Title XVIII,Depreciation Cost,0.7141134733988069,0.7141134733988069
+Total Bed Days Available,Major Movable Equipment,0.7121326492840769,0.7121326492840769
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,DRG Amounts After October 1,0.7073722848704812,0.7073722848704812
+Total Discharges (V + XVIII + XIX + Unknown),DRG Amounts After October 1,0.7073722848704812,0.7073722848704812
+Accounts Receivable,Less Contractual Allowance and Discounts on Patients' Accounts,0.706169354747283,0.706169354747283
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Major Movable Equipment,0.7060490585441735,0.7060490585441735
+Total Discharges (V + XVIII + XIX + Unknown),Major Movable Equipment,0.7060490585441735,0.7060490585441735
+Hospital Total Bed Days Available For Adults & Peds,Major Movable Equipment,0.7031808728314037,0.7031808728314037
+Total Days Title XVIII,Total Fixed Assets,0.7031113081548456,0.7031113081548456
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,DRG Amounts After October 1,0.7025572891076932,0.7025572891076932
+Hospital Total Discharges Title XVIII For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.7021928624225974,0.7021928624225974
+Total Discharges Title XVIII,Less Contractual Allowance and Discounts on Patients' Accounts,0.7021928624225974,0.7021928624225974
+Land,Total Fixed Assets,0.7013867460777136,0.7013867460777136
+Total Days Title XVIII,Major Movable Equipment,0.6986906324261346,0.6986906324261346
+Total Salaries From Worksheet A,Accounts Receivable,0.6969059266629682,0.6969059266629682
+Hospital Total Days Title XVIII For Adults & Peds,Total Fixed Assets,0.6959330884686181,0.6959330884686181
+Total Assets,Total Current Liabilities,0.6958608733627183,0.6958608733627183
+Total Discharges Title XVIII,Total Salaries (adjusted),0.6957798883061324,0.6957798883061324
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Salaries (adjusted),0.6957798883061324,0.6957798883061324
+Prepaid Expenses,Total Assets,0.6947207099706089,0.6947207099706089
+Total Discharges (V + XVIII + XIX + Unknown),Total Fixed Assets,0.6935505162482701,0.6935505162482701
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Fixed Assets,0.6935505162482701,0.6935505162482701
+Total Salaries (adjusted),Accounts Receivable,0.690707734904782,0.690707734904782
+Total Bed Days Available,Total Fixed Assets,0.6903595986351154,0.6903595986351154
+Total Days Title XIX,Total Days (V + XVIII + XIX + Unknown),0.689561752936406,0.689561752936406
+Total Discharges Title XVIII,Total Salaries From Worksheet A,0.689049781695683,0.689049781695683
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Salaries From Worksheet A,0.689049781695683,0.689049781695683
+Hospital Total Days Title XVIII For Adults & Peds,Major Movable Equipment,0.6887484138595924,0.6887484138595924
+Total Days (V + XVIII + XIX + Unknown),DRG Amounts After October 1,0.6883720562994143,0.6883720562994143
+FTE - Employees on Payroll,"Salaries, Wages, and Fees Payable",0.6878683880903063,0.6878683880903063
+Hospital Total Bed Days Available For Adults & Peds,Total Fixed Assets,0.6802333607390121,0.6802333607390121
+Buildings,Total Liabilities,0.680185380092026,0.680185380092026
+Prepaid Expenses,"Salaries, Wages, and Fees Payable",0.6792373461801322,0.6792373461801322
+Hospital Total Bed Days Available For Adults & Peds,DRG Amounts After October 1,0.6766974282243312,0.6766974282243312
+Major Movable Equipment,Less Contractual Allowance and Discounts on Patients' Accounts,0.6763500502676687,0.6763500502676687
+Total Assets,Less Contractual Allowance and Discounts on Patients' Accounts,0.6756665385367842,0.6756665385367842
+Total Bed Days Available,DRG Amounts After October 1,0.6724736827760578,0.6724736827760578
+DRG Amounts After October 1,Less Contractual Allowance and Discounts on Patients' Accounts,0.6721560574041203,0.6721560574041203
+Land,Total Assets,0.6702054454384809,0.6702054454384809
+Major Movable Equipment,"Salaries, Wages, and Fees Payable",0.6693083713311553,0.6693083713311553
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Buildings,0.6676244043840139,0.6676244043840139
+Total Days Title XIX,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.6667673590761706,0.6667673590761706
+Buildings,Less Contractual Allowance and Discounts on Patients' Accounts,0.6663491239928199,0.6663491239928199
+Depreciation Cost,Land,0.6662459042315876,0.6662459042315876
+Total Assets,Accounts Payable,0.6660837924697942,0.6660837924697942
+Total Days (V + XVIII + XIX + Unknown),Buildings,0.6654581023931927,0.6654581023931927
+Total Days Title XIX,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.6637132422946213,0.6637132422946213
+Total Days Title XIX,Total Discharges (V + XVIII + XIX + Unknown),0.6637132422946213,0.6637132422946213
+FTE - Employees on Payroll,Accounts Receivable,0.6599254569564139,0.6599254569564139
+Hospital Total Discharges Title XVIII For Adults & Peds,Major Movable Equipment,0.6592367614556898,0.6592367614556898
+Total Discharges Title XVIII,Major Movable Equipment,0.6592367614556898,0.6592367614556898
+Total Liabilities,Less Total Operating Expense,0.6590567267289822,0.6590567267289822
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Fixed Assets,0.6582987041894696,0.6582987041894696
+Total Discharges Title XVIII,Total Fixed Assets,0.6582987041894696,0.6582987041894696
+Total Days Title XIX,Total Bed Days Available,0.6575374189990766,0.6575374189990766
+Accounts Receivable,Total Assets,0.6574534858011142,0.6574534858011142
+Total Salaries From Worksheet A,Total Current Assets,0.6560723709804391,0.6560723709804391
+Prepaid Expenses,Less Total Operating Expense,0.6549337938554222,0.6549337938554222
+Accounts Receivable,Inventory,0.6520584307477733,0.6520584307477733
+Total Days Title XVIII,Buildings,0.6514803294424978,0.6514803294424978
+Total Current Assets,Less Total Operating Expense,0.6508240997572924,0.6508240997572924
+Total Salaries From Worksheet A,Total Liabilities,0.6504532880784176,0.6504532880784176
+Prepaid Expenses,Total Fixed Assets,0.6488134802418515,0.6488134802418515
+Total Salaries (adjusted),Total Current Assets,0.6475055328351588,0.6475055328351588
+Land,Buildings,0.646678329166814,0.646678329166814
+DRG Amounts After October 1,Less Total Operating Expense,0.6462959330774372,0.6462959330774372
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Assets,0.6446042627399884,0.6446042627399884
+Total Salaries (adjusted),Total Liabilities,0.6445572038244337,0.6445572038244337
+Total Salaries (adjusted),Prepaid Expenses,0.6434634602019043,0.6434634602019043
+Hospital Total Days Title XVIII For Adults & Peds,Buildings,0.6426750153231875,0.6426750153231875
+Total Bed Days Available,Buildings,0.6424535345696013,0.6424535345696013
+Total Days (V + XVIII + XIX + Unknown),Total Assets,0.6409562266320523,0.6409562266320523
+"Salaries, Wages, and Fees Payable",Total Liabilities,0.6387198743334903,0.6387198743334903
+Major Movable Equipment,Total Liabilities,0.6379044209529182,0.6379044209529182
+FTE - Employees on Payroll,Land Improvements,0.6372007929433399,0.6372007929433399
+Depreciation Cost,"Salaries, Wages, and Fees Payable",0.6368427975651572,0.6368427975651572
+Total Salaries From Worksheet A,Prepaid Expenses,0.6354535904634406,0.6354535904634406
+Prepaid Expenses,Buildings,0.6350235463257016,0.6350235463257016
+FTE - Employees on Payroll,DRG Amounts After October 1,0.633459440121729,0.633459440121729
+Total Salaries (adjusted),DRG Amounts After October 1,0.6326708914406104,0.6326708914406104
+Total Days Title XIX,Hospital Total Bed Days Available For Adults & Peds,0.6323103715757976,0.6323103715757976
+Inventory,"Salaries, Wages, and Fees Payable",0.6300852188771185,0.6300852188771185
+Hospital Total Bed Days Available For Adults & Peds,Buildings,0.6297046158716461,0.6297046158716461
+Land Improvements,Major Movable Equipment,0.6296233846488979,0.6296233846488979
+Depreciation Cost,Land Improvements,0.6283796794492924,0.6283796794492924
+Total Days Title XVIII,Total Assets,0.6279609688115948,0.6279609688115948
+Accounts Receivable,Buildings,0.627425546656958,0.627425546656958
+Total Assets,Total Long Term Liabilities,0.6273107030041998,0.6273107030041998
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Days Title XIX For Adults & Peds,0.6265252927560755,0.6265252927560755
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Buildings,0.6261855796351788,0.6261855796351788
+Total Discharges (V + XVIII + XIX + Unknown),Buildings,0.6261855796351788,0.6261855796351788
+Hospital Total Days Title XVIII For Adults & Peds,Total Assets,0.6244630535418111,0.6244630535418111
+Accounts Receivable,Total Fixed Assets,0.6243332336388538,0.6243332336388538
+Total Current Assets,Buildings,0.623981715616443,0.623981715616443
+Total Salaries From Worksheet A,DRG Amounts After October 1,0.6239207625553486,0.6239207625553486
+Land,Less Total Operating Expense,0.6238301280932802,0.6238301280932802
+Total Bed Days Available,Total Bad Debt Expense,0.6238175511291093,0.6238175511291093
+Land,Major Movable Equipment,0.6218477151669518,0.6218477151669518
+Hospital Total Days Title XIX For Adults & Peds,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.6206284195672829,0.6206284195672829
+Accounts Receivable,Major Movable Equipment,0.6201917947872868,0.6201917947872868
+Total Bed Days Available,Total Assets,0.6188248425433011,0.6188248425433011
+FTE - Employees on Payroll,Land,0.6178205585646874,0.6178205585646874
+Land Improvements,Total Fixed Assets,0.6157812133329539,0.6157812133329539
+Total Current Assets,Total Fixed Assets,0.6150069710650085,0.6150069710650085
+Total Fixed Assets,Total Liabilities,0.614021097454283,0.614021097454283
+Total Days (V + XVIII + XIX + Unknown),Accounts Receivable,0.6126471660519747,0.6126471660519747
+Hospital Total Bed Days Available For Adults & Peds,Total Bad Debt Expense,0.6122621215091973,0.6122621215091973
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Accounts Receivable,0.6101386783015005,0.6101386783015005
+Total Current Assets,Total Current Liabilities,0.6087656742246729,0.6087656742246729
+Hospital Total Bed Days Available For Adults & Peds,Total Assets,0.6080451332934455,0.6080451332934455
+Total Days (V + XVIII + XIX + Unknown),Total Bad Debt Expense,0.6074798309899553,0.6074798309899553
+Total Discharges (V + XVIII + XIX + Unknown),Total Bad Debt Expense,0.6074591890332087,0.6074591890332087
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Bad Debt Expense,0.6074591890332087,0.6074591890332087
+FTE - Employees on Payroll,Total Current Assets,0.6055458581170653,0.6055458581170653
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Days Title XIX For Adults & Peds,0.6055081519123506,0.6055081519123506
+Hospital Total Days Title XIX For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.6055081519123505,0.6055081519123505
+Buildings,Total Long Term Liabilities,0.6053142177825025,0.6053142177825025
+FTE - Employees on Payroll,Prepaid Expenses,0.6043667818060521,0.6043667818060521
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Assets,0.6037268052838644,0.6037268052838644
+Total Discharges (V + XVIII + XIX + Unknown),Total Assets,0.6037268052838644,0.6037268052838644
+FTE - Employees on Payroll,Total Liabilities,0.6008871587922744,0.6008871587922744
+Hospital Total Discharges Title XVIII For Adults & Peds,Buildings,0.6006071696847558,0.6006071696847558
+Total Discharges Title XVIII,Buildings,0.6006071696847558,0.6006071696847558
+Total Salaries (adjusted),Land,0.6000590352405664,0.6000590352405664
+Inventory,DRG Amounts After October 1,0.5990469754920638,0.5990469754920638
+Total Bed Days Available,Accounts Receivable,0.5979430386531546,0.5979430386531546
+Total Discharges (V + XVIII + XIX + Unknown),Fixed Equipment,0.5964806832211379,0.5964806832211379
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Fixed Equipment,0.5964806832211379,0.5964806832211379
+Land Improvements,Buildings,0.5963893138440829,0.5963893138440829
+Accounts Payable,Total Current Liabilities,0.595856774548062,0.595856774548062
+Inventory,Land,0.5953797116987762,0.5953797116987762
+Total Salaries From Worksheet A,Land,0.5942400038504945,0.5942400038504945
+Total Current Assets,Total Liabilities,0.5926483495316092,0.5926483495316092
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Bad Debt Expense,0.5915420069012742,0.5915420069012742
+Depreciation Cost,Prepaid Expenses,0.5900353182885845,0.5900353182885845
+Total Bed Days Available,Hospital Total Days Title XIX For Adults & Peds,0.5889719618869563,0.5889719618869563
+Total Discharges (V + XVIII + XIX + Unknown),Accounts Receivable,0.5869685253616438,0.5869685253616438
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Accounts Receivable,0.5869685253616438,0.5869685253616438
+Hospital Total Bed Days Available For Adults & Peds,Accounts Receivable,0.5853873403788683,0.5853873403788683
+Total Current Assets,"Salaries, Wages, and Fees Payable",0.5853719512364294,0.5853719512364294
+Total Days (V + XVIII + XIX + Unknown),Fixed Equipment,0.5822316819765107,0.5822316819765107
+Land Improvements,Less Total Operating Expense,0.5807631267175797,0.5807631267175797
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Land Improvements,0.5801504258292784,0.5801504258292784
+Total Discharges (V + XVIII + XIX + Unknown),Land Improvements,0.5801504258292784,0.5801504258292784
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Fixed Equipment,0.5798151727932548,0.5798151727932548
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Less Contractual Allowance and Discounts on Patients' Accounts,-0.5788236910353776,0.5788236910353776
+Depreciation Cost,DRG Amounts After October 1,0.5788112458453273,0.5788112458453273
+Total Discharges Title XVIII,Total Assets,0.5783639517566659,0.5783639517566659
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Assets,0.5783639517566659,0.5783639517566659
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Land Improvements,0.5774021546935241,0.5774021546935241
+Major Movable Equipment,Accounts Payable,0.5760204613210149,0.5760204613210149
+Total Current Liabilities,Less Total Operating Expense,0.5759734776676503,0.5759734776676503
+Accounts Receivable,Total Current Assets,0.5752527478454378,0.5752527478454378
+Hospital Total Days Title XIX For Adults & Peds,Hospital Total Bed Days Available For Adults & Peds,0.5751152039119695,0.5751152039119695
+Total Salaries From Worksheet A,Land Improvements,0.5732845021549983,0.5732845021549983
+Total Bed Days Available,Fixed Equipment,0.5730982763683846,0.5730982763683846
+Hospital Total Bed Days Available For Adults & Peds,Fixed Equipment,0.5727502251666678,0.5727502251666678
+Total Days (V + XVIII + XIX + Unknown),Land Improvements,0.5725871382802186,0.5725871382802186
+Total Fixed Assets,DRG Amounts After October 1,0.5716243882339428,0.5716243882339428
+Total Salaries (adjusted),Land Improvements,0.5715777035155897,0.5715777035155897
+Total Bed Days Available,Land,0.5715565996909353,0.5715565996909353
+Hospital Total Bed Days Available For Adults & Peds,Land Improvements,0.5692680366444175,0.5692680366444175
+Total Bed Days Available,Land Improvements,0.5689297830300424,0.5689297830300424
+Accounts Receivable,DRG Amounts After October 1,0.564508217093427,0.564508217093427
+Major Movable Equipment,Total Current Liabilities,0.564460176798808,0.564460176798808
+Total Days Title XVIII,Accounts Receivable,0.5620772688580202,0.5620772688580202
+Total Days Title XVIII,Total Days Title XIX,0.5617020736527429,0.5617020736527429
+Total Salaries From Worksheet A,Total Long Term Liabilities,0.5612143516080715,0.5612143516080715
+Total Days (V + XVIII + XIX + Unknown),Land,0.5603844921611978,0.5603844921611978
+Total Salaries (adjusted),Total Long Term Liabilities,0.5599058216065018,0.5599058216065018
+Hospital Total Bed Days Available For Adults & Peds,Land,0.55980759557335,0.55980759557335
+Prepaid Expenses,Major Movable Equipment,0.5575628853238239,0.5575628853238239
+Land Improvements,Total Assets,0.5575328223012401,0.5575328223012401
+Major Movable Equipment,DRG Amounts After October 1,0.5569149645016952,0.5569149645016952
+Total Long Term Liabilities,Less Total Operating Expense,0.5548499220843027,0.5548499220843027
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Land,0.5537826582918668,0.5537826582918668
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Less Total Operating Expense,-0.5534256957908275,0.5534256957908275
+"Salaries, Wages, and Fees Payable",Less Contractual Allowance and Discounts on Patients' Accounts,0.5519909158055666,0.5519909158055666
+Hospital Total Days Title XVIII For Adults & Peds,Accounts Receivable,0.5516766963627957,0.5516766963627957
+"Salaries, Wages, and Fees Payable",Total Current Liabilities,0.5512882408446886,0.5512882408446886
+FTE - Employees on Payroll,Total Days Title XIX,0.551007866138463,0.551007866138463
+Accounts Payable,Less Total Operating Expense,0.5484350225383904,0.5484350225383904
+Total Days Title XIX,Hospital Total Days Title XVIII For Adults & Peds,0.5467260601889256,0.5467260601889256
+Land,Less Contractual Allowance and Discounts on Patients' Accounts,0.5459323007625724,0.5459323007625724
+Total Salaries From Worksheet A,Total Current Liabilities,0.5456663892690106,0.5456663892690106
+Inventory,Land Improvements,0.5448371558827136,0.5448371558827136
+Total Discharges Title XIX,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.5445340321054888,0.5445340321054888
+Total Discharges Title XIX,Total Discharges (V + XVIII + XIX + Unknown),0.5445340321054888,0.5445340321054888
+Hospital Total Discharges Title XIX For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.5445340321054888,0.5445340321054888
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Total Discharges Title XIX For Adults & Peds,0.5445340321054888,0.5445340321054888
+Hospital Total Days Title XVIII For Adults & Peds,Total Current Assets,0.544236580595681,0.544236580595681
+Depreciation Cost,Total Current Assets,0.5440152945052198,0.5440152945052198
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Current Assets,0.5438510775651214,0.5438510775651214
+Inventory,Total Current Assets,0.5421765156719932,0.5421765156719932
+"Salaries, Wages, and Fees Payable",Total Long Term Liabilities,0.5418560702722997,0.5418560702722997
+Total Days Title XVIII,Total Current Assets,0.5409318063556166,0.5409318063556166
+Prepaid Expenses,Less Contractual Allowance and Discounts on Patients' Accounts,0.5409210511891389,0.5409210511891389
+Total Bad Debt Expense,Less Contractual Allowance and Discounts on Patients' Accounts,0.5402027917287994,0.5402027917287994
+Depreciation Cost,Total Liabilities,0.5401590019576031,0.5401590019576031
+Total Days (V + XVIII + XIX + Unknown),Hospital Total Discharges Title XIX For Adults & Peds,0.5398542770749568,0.5398542770749568
+Total Days (V + XVIII + XIX + Unknown),Total Discharges Title XIX,0.5398542770749568,0.5398542770749568
+Buildings,Total Current Liabilities,0.5397161369283281,0.5397161369283281
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Land,0.5390489589985668,0.5390489589985668
+Total Discharges (V + XVIII + XIX + Unknown),Land,0.5390489589985668,0.5390489589985668
+Total Days (V + XVIII + XIX + Unknown),Total Current Assets,0.5383271163231752,0.5383271163231752
+Total Current Assets,Major Movable Equipment,0.5376094332732273,0.5376094332732273
+Prepaid Expenses,Total Liabilities,0.5362021966575364,0.5362021966575364
+Total Days Title XIX,Less Total Operating Expense,0.535023866580643,0.535023866580643
+Total Salaries (adjusted),Total Current Liabilities,0.5343921488634549,0.5343921488634549
+Accounts Receivable,"Salaries, Wages, and Fees Payable",0.5341957980376102,0.5341957980376102
+Major Movable Equipment,Total Long Term Liabilities,0.5328786486091481,0.5328786486091481
+Total Discharges Title XIX,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.5322870196501158,0.5322870196501158
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.5322870196501158,0.5322870196501158
+Accounts Payable,Total Liabilities,0.5319274526876712,0.5319274526876712
+Total Current Assets,Less Contractual Allowance and Discounts on Patients' Accounts,0.531590543077513,0.531590543077513
+Total Fixed Assets,Total Long Term Liabilities,0.5311663829208629,0.5311663829208629
+Total Days Title XVIII,Land Improvements,0.5310106536102012,0.5310106536102012
+Depreciation Cost,Accounts Receivable,0.5302215278045902,0.5302215278045902
+Inventory,Prepaid Expenses,0.5300336882760497,0.5300336882760497
+Total Discharges Title XVIII,Accounts Receivable,0.5285825762232681,0.5285825762232681
+Hospital Total Discharges Title XVIII For Adults & Peds,Accounts Receivable,0.5285825762232681,0.5285825762232681
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,"Salaries, Wages, and Fees Payable",0.5277118079257634,0.5277118079257634
+Total Days Title XVIII,Fixed Equipment,0.5267594037150054,0.5267594037150054
+Prepaid Expenses,Total Current Assets,0.5263218716016834,0.5263218716016834
+Total Discharges Title XVIII,Land Improvements,0.5259213384310659,0.5259213384310659
+Hospital Total Discharges Title XVIII For Adults & Peds,Land Improvements,0.5259213384310659,0.5259213384310659
+Hospital Total Days Title XVIII For Adults & Peds,Land Improvements,0.5256686043417736,0.5256686043417736
+Total Days Title XVIII,Hospital Total Days Title XIX For Adults & Peds,0.5254471262943322,0.5254471262943322
+Total Discharges Title XVIII,Fixed Equipment,0.5248099041826342,0.5248099041826342
+Hospital Total Discharges Title XVIII For Adults & Peds,Fixed Equipment,0.5248099041826342,0.5248099041826342
+Total Days (V + XVIII + XIX + Unknown),"Salaries, Wages, and Fees Payable",0.5230709397653043,0.5230709397653043
+Total Salaries From Worksheet A,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.5225284984973299,0.5225284984973299
+FTE - Employees on Payroll,Total Long Term Liabilities,0.522084703270981,0.522084703270981
+Hospital Total Days Title XVIII For Adults & Peds,Fixed Equipment,0.521066650340899,0.521066650340899
+Total Bed Days Available,Total Discharges Title XIX,0.5208324116214246,0.5208324116214246
+Total Bed Days Available,Hospital Total Discharges Title XIX For Adults & Peds,0.5208324116214246,0.5208324116214246
+Total Discharges (V + XVIII + XIX + Unknown),Total Current Assets,0.5181494130018569,0.5181494130018569
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Current Assets,0.5181494130018569,0.5181494130018569
+Land,Land Improvements,0.5180919449855498,0.5180919449855498
+Total Bed Days Available,Total Current Assets,0.5180769134885203,0.5180769134885203
+Total Days Title XIX,Total Discharges Title XVIII,0.5180210137198762,0.5180210137198762
+Total Days Title XIX,Hospital Total Discharges Title XVIII For Adults & Peds,0.5180210137198762,0.5180210137198762
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Days Title XIX For Adults & Peds,0.5173131719549785,0.5173131719549785
+Land,"Salaries, Wages, and Fees Payable",0.516735985668279,0.516735985668279
+Total Days Title XIX,Inventory,0.5153125957865351,0.5153125957865351
+Hospital Total Bed Days Available For Adults & Peds,Total Current Assets,0.513867521786058,0.513867521786058
+Total Fixed Assets,Total Current Liabilities,0.5127824130632114,0.5127824130632114
+Hospital Total Bed Days Available For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.5125935037839533,0.5125935037839533
+Total Discharges Title XIX,Hospital Total Bed Days Available For Adults & Peds,0.5125935037839533,0.5125935037839533
+Total Assets,DRG Amounts After October 1,0.5121217506026244,0.5121217506026244
+Total Salaries (adjusted),Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.511884757671895,0.511884757671895
+Accounts Receivable,Total Liabilities,0.5094741428134171,0.5094741428134171
+FTE - Employees on Payroll,Hospital Total Days Title XIX For Adults & Peds,0.5087932206033828,0.5087932206033828
+Total Days Title XVIII,"Salaries, Wages, and Fees Payable",0.5084824269337351,0.5084824269337351
+Hospital Total Days Title XVIII For Adults & Peds,"Salaries, Wages, and Fees Payable",0.5084554975039524,0.5084554975039524
+Land,Total Liabilities,0.50753894886758,0.50753894886758
+Buildings,Accounts Payable,0.5067251943031142,0.5067251943031142
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Current Assets,0.5063515673535589,0.5063515673535589
+Total Discharges Title XVIII,Total Current Assets,0.5063515673535589,0.5063515673535589
+Total Days Title XIX,Accounts Receivable,0.5061819362317702,0.5061819362317702
+Total Days Title XIX,Less Contractual Allowance and Discounts on Patients' Accounts,0.5033960908811541,0.5033960908811541
+Buildings,DRG Amounts After October 1,0.5008284644209531,0.5008284644209531
+FTE - Employees on Payroll,Total Current Liabilities,0.4979957214055752,0.4979957214055752
+Inventory,Total Current Liabilities,0.49776332998231976,0.49776332998231976
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,"Salaries, Wages, and Fees Payable",0.49606914338732955,0.49606914338732955
+Total Discharges (V + XVIII + XIX + Unknown),"Salaries, Wages, and Fees Payable",0.49606914338732955,0.49606914338732955
+Fixed Equipment,Less Contractual Allowance and Discounts on Patients' Accounts,0.49582740009965354,0.49582740009965354
+Total Days Title XIX,Total Salaries (adjusted),0.4957644258585179,0.4957644258585179
+FTE - Employees on Payroll,Fixed Equipment,0.4956321154716568,0.4956321154716568
+Land Improvements,Fixed Equipment,0.4949999087758592,0.4949999087758592
+Total Days Title XIX,Total Salaries From Worksheet A,0.49474655947171753,0.49474655947171753
+Total Days Title XIX,Depreciation Cost,0.49382021433823203,0.49382021433823203
+Land,Accounts Payable,0.4938197302956813,0.4938197302956813
+Total Bed Days Available,"Salaries, Wages, and Fees Payable",0.492831334986037,0.492831334986037
+Prepaid Expenses,Accounts Payable,0.4918352968063249,0.4918352968063249
+Total Days Title XVIII,Land,0.4908358273918529,0.4908358273918529
+Hospital Total Days Title XIX For Adults & Peds,Less Total Operating Expense,0.4905067315109022,0.4905067315109022
+FTE - Employees on Payroll,Total Bad Debt Expense,0.4903745223033134,0.4903745223033134
+Prepaid Expenses,DRG Amounts After October 1,0.48847733345265615,0.48847733345265615
+Hospital Total Days Title XIX For Adults & Peds,Hospital Total Discharges Title XVIII For Adults & Peds,0.48755892486522684,0.48755892486522684
+Total Discharges Title XVIII,Hospital Total Days Title XIX For Adults & Peds,0.4875589248652268,0.4875589248652268
+Inventory,Total Liabilities,0.487255135013022,0.487255135013022
+Accounts Payable,"Salaries, Wages, and Fees Payable",0.48701840043164113,0.48701840043164113
+Total Days Title XVIII,Total Bad Debt Expense,0.486754232946875,0.486754232946875
+Hospital Total Bed Days Available For Adults & Peds,"Salaries, Wages, and Fees Payable",0.4853757557883324,0.4853757557883324
+Inventory,Accounts Payable,0.4846873883613101,0.4846873883613101
+FTE - Employees on Payroll,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4845849785994185,0.4845849785994185
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Inventory,-0.48092483909986133,0.48092483909986133
+Hospital Total Days Title XIX For Adults & Peds,Accounts Receivable,0.4809161019245968,0.4809161019245968
+Prepaid Expenses,Land,0.4803507813424829,0.4803507813424829
+Hospital Total Days Title XVIII For Adults & Peds,Land,0.4796965325559647,0.4796965325559647
+Fixed Equipment,Total Fixed Assets,0.4795308565654031,0.4795308565654031
+Inventory,Fixed Equipment,0.4787725855337059,0.4787725855337059
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Assets,-0.4784212215382754,0.4784212215382754
+Total Bad Debt Expense,Inventory,0.47636695551447283,0.47636695551447283
+Total Days Title XIX,Total Bad Debt Expense,0.47515365211502386,0.47515365211502386
+Total Discharges Title XVIII,Total Bad Debt Expense,0.4724414791249713,0.4724414791249713
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Bad Debt Expense,0.4724414791249713,0.4724414791249713
+Total Days (V + XVIII + XIX + Unknown),Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4694633705731514,0.4694633705731514
+Hospital Total Days Title XVIII For Adults & Peds,Total Bad Debt Expense,0.468458097375128,0.468458097375128
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Current Assets,-0.4676804162274354,0.4676804162274354
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4669778095189972,0.4669778095189972
+Total Fixed Assets,Accounts Payable,0.4669694410138303,0.4669694410138303
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Prepaid Expenses,0.46669882464994383,0.46669882464994383
+Prepaid Expenses,Total Long Term Liabilities,0.4665622942638112,0.4665622942638112
+Total Bed Days Available,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4643130080343904,0.4643130080343904
+Fixed Equipment,Major Movable Equipment,0.4636397955761806,0.4636397955761806
+Hospital Total Days Title XIX For Adults & Peds,Total Salaries (adjusted),0.4631083411070376,0.4631083411070376
+Total Discharges Title XVIII,"Salaries, Wages, and Fees Payable",0.46300683041649554,0.46300683041649554
+Hospital Total Discharges Title XVIII For Adults & Peds,"Salaries, Wages, and Fees Payable",0.46300683041649554,0.46300683041649554
+Hospital Total Days Title XIX For Adults & Peds,Inventory,0.462987017679279,0.462987017679279
+Depreciation Cost,Accounts Payable,0.4628722972291193,0.4628722972291193
+Total Days (V + XVIII + XIX + Unknown),Prepaid Expenses,0.4623110564299496,0.4623110564299496
+Depreciation Cost,Total Long Term Liabilities,0.4614803214114776,0.4614803214114776
+Hospital Total Days Title XIX For Adults & Peds,Total Salaries From Worksheet A,0.4609974285717011,0.4609974285717011
+Depreciation Cost,Total Current Liabilities,0.46079622430352535,0.46079622430352535
+Hospital Total Days Title XVIII For Adults & Peds,Prepaid Expenses,0.4595558403789195,0.4595558403789195
+Total Days Title XVIII,Prepaid Expenses,0.4580434659529265,0.4580434659529265
+Less: Allowances for Uncollectible Notes and Accounts Receivable,DRG Amounts After October 1,-0.4571330861082526,0.4571330861082526
+"Salaries, Wages, and Fees Payable",DRG Amounts After October 1,0.4557686922317331,0.4557686922317331
+Land Improvements,Less Contractual Allowance and Discounts on Patients' Accounts,0.45544954845025337,0.45544954845025337
+Hospital Total Discharges Title XVIII For Adults & Peds,Land,0.455253116453915,0.455253116453915
+Total Discharges Title XVIII,Land,0.455253116453915,0.455253116453915
+Depreciation Cost,Fixed Equipment,0.4547195345380065,0.4547195345380065
+Total Discharges (V + XVIII + XIX + Unknown),Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.45402242001033655,0.45402242001033655
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.45402242001033655,0.45402242001033655
+Hospital Total Bed Days Available For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4538572737660124,0.4538572737660124
+Total Days Title XIX,Major Movable Equipment,0.45320156246511795,0.45320156246511795
+Total Bad Debt Expense,Accounts Receivable,0.4499935777479958,0.4499935777479958
+Hospital Total Days Title XIX For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.44947258243625626,0.44947258243625626
+Total Days Title XVIII,Total Discharges Title XIX,0.4490835054652625,0.4490835054652625
+Total Days Title XVIII,Hospital Total Discharges Title XIX For Adults & Peds,0.4490835054652625,0.4490835054652625
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Buildings,-0.44839903642724876,0.44839903642724876
+Total Days Title XIX,DRG Amounts After October 1,0.4480565388857164,0.4480565388857164
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Major Movable Equipment,-0.4478360443593002,0.4478360443593002
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Fixed Assets,-0.4470333376103742,0.4470333376103742
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Prepaid Expenses,0.4453472072036381,0.4453472072036381
+Total Discharges (V + XVIII + XIX + Unknown),Prepaid Expenses,0.4453472072036381,0.4453472072036381
+Hospital Total Days Title XIX For Adults & Peds,Depreciation Cost,0.4447217436386533,0.4447217436386533
+Total Current Assets,Total Long Term Liabilities,0.4447050738859155,0.4447050738859155
+Prepaid Expenses,Total Current Liabilities,0.4432489201370949,0.4432489201370949
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.4425547595140413,0.4425547595140413
+Total Discharges Title XIX,Hospital Total Days Title XVIII For Adults & Peds,0.4425547595140413,0.4425547595140413
+Land,Total Long Term Liabilities,0.4409245957085799,0.4409245957085799
+Accounts Receivable,Prepaid Expenses,0.43951659724339726,0.43951659724339726
+Total Bad Debt Expense,Depreciation Cost,0.43911557343697444,0.43911557343697444
+Total Bed Days Available,Prepaid Expenses,0.43905959196950295,0.43905959196950295
+Total Bad Debt Expense,Less Total Operating Expense,0.43900700969918166,0.43900700969918166
+FTE - Employees on Payroll,Total Discharges Title XIX,0.43765847780402645,0.43765847780402645
+FTE - Employees on Payroll,Hospital Total Discharges Title XIX For Adults & Peds,0.43765847780402645,0.43765847780402645
+Land Improvements,Total Liabilities,0.43660658756840925,0.43660658756840925
+Accounts Receivable,Total Long Term Liabilities,0.4356761955650459,0.4356761955650459
+Total Current Assets,DRG Amounts After October 1,0.4344806087261492,0.4344806087261492
+Accounts Receivable,Total Current Liabilities,0.4339310612470365,0.4339310612470365
+Total Days Title XIX,Total Fixed Assets,0.4335503790354793,0.4335503790354793
+Total Discharges Title XVIII,Hospital Total Discharges Title XIX For Adults & Peds,0.4313181858380439,0.4313181858380439
+Hospital Total Discharges Title XVIII For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.4313181858380439,0.4313181858380439
+Total Discharges Title XIX,Hospital Total Discharges Title XVIII For Adults & Peds,0.4313181858380439,0.4313181858380439
+Total Discharges Title XVIII,Total Discharges Title XIX,0.4313181858380439,0.4313181858380439
+Total Days Title XIX,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.43059372042864136,0.43059372042864136
+Hospital Total Bed Days Available For Adults & Peds,Prepaid Expenses,0.4301181649277562,0.4301181649277562
+Hospital Total Days Title XIX For Adults & Peds,DRG Amounts After October 1,0.42796731330915455,0.42796731330915455
+Hospital Total Days Title XIX For Adults & Peds,Total Bad Debt Expense,0.4274894519054793,0.4274894519054793
+Total Bad Debt Expense,Total Salaries From Worksheet A,0.42428195647494604,0.42428195647494604
+Hospital Total Discharges Title XIX For Adults & Peds,Total Bad Debt Expense,0.42329755363724325,0.42329755363724325
+Total Discharges Title XIX,Total Bad Debt Expense,0.42329755363724325,0.42329755363724325
+Land Improvements,"Salaries, Wages, and Fees Payable",0.42233099431835663,0.42233099431835663
+Total Current Liabilities,Total Long Term Liabilities,0.42136397707027784,0.42136397707027784
+Land,Total Current Liabilities,0.42072204526568613,0.42072204526568613
+Total Discharges Title XVIII,Prepaid Expenses,0.41720927554666715,0.41720927554666715
+Hospital Total Discharges Title XVIII For Adults & Peds,Prepaid Expenses,0.41720927554666715,0.41720927554666715
+Hospital Total Days Title XIX For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.4171983565871254,0.4171983565871254
+Total Salaries (adjusted),Accounts Payable,0.41397247492843015,0.41397247492843015
+Total Days Title XVIII,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.41228880012854835,0.41228880012854835
+Total Bad Debt Expense,Total Salaries (adjusted),0.41169739311377573,0.41169739311377573
+FTE - Employees on Payroll,Accounts Payable,0.411656796526862,0.411656796526862
+Total Days Title XIX,Total Assets,0.41147245296525453,0.41147245296525453
+Total Salaries From Worksheet A,Accounts Payable,0.4113834767400077,0.4113834767400077
+Fixed Equipment,Less Total Operating Expense,0.4085120878178524,0.4085120878178524
+Total Current Liabilities,Less Contractual Allowance and Discounts on Patients' Accounts,0.4080425709852089,0.4080425709852089
+Hospital Total Days Title XIX For Adults & Peds,Major Movable Equipment,0.4073420328454925,0.4073420328454925
+Total Bad Debt Expense,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.40649779488348964,0.40649779488348964
+Hospital Total Discharges Title XIX For Adults & Peds,DRG Amounts After October 1,0.4044644488213967,0.4044644488213967
+Total Discharges Title XIX,DRG Amounts After October 1,0.4044644488213967,0.4044644488213967
+Total Current Assets,Land,0.4042667932415332,0.4042667932415332
+Hospital Total Days Title XVIII For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.40301947987293685,0.40301947987293685
+Total Bad Debt Expense,DRG Amounts After October 1,0.40245606320401606,0.40245606320401606
+Total Bad Debt Expense,Total Fixed Assets,0.4020747168436553,0.4020747168436553
+Total Days Title XIX,Buildings,0.40037432768747666,0.40037432768747666
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Liabilities,-0.4000676994044119,0.4000676994044119
+Total Days (V + XVIII + XIX + Unknown),Total Current Liabilities,0.39982055758636686,0.39982055758636686
+Total Salaries (adjusted),Fixed Equipment,0.39841459283191333,0.39841459283191333
+Hospital Total Discharges Title XIX For Adults & Peds,Less Total Operating Expense,0.3976492030581852,0.3976492030581852
+Total Discharges Title XIX,Less Total Operating Expense,0.3976492030581852,0.3976492030581852
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Current Liabilities,0.3967779570326434,0.3967779570326434
+Less: Allowances for Uncollectible Notes and Accounts Receivable,"Salaries, Wages, and Fees Payable",-0.3961693184176259,0.3961693184176259
+Total Bed Days Available,Total Current Liabilities,0.395933865141377,0.395933865141377
+Accounts Receivable,Land Improvements,0.39564771209209526,0.39564771209209526
+Total Discharges Title XVIII,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.39185923826556435,0.39185923826556435
+Hospital Total Discharges Title XVIII For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.39185923826556435,0.39185923826556435
+Land Improvements,Total Long Term Liabilities,0.39182621278344615,0.39182621278344615
+Accounts Receivable,Land,0.3911632769744064,0.3911632769744064
+Total Salaries From Worksheet A,Fixed Equipment,0.3898314280410613,0.3898314280410613
+Total Bad Debt Expense,Land,0.38810281789803236,0.38810281789803236
+Total Bad Debt Expense,Major Movable Equipment,0.3870820214902125,0.3870820214902125
+Hospital Total Bed Days Available For Adults & Peds,Total Current Liabilities,0.3867407468747153,0.3867407468747153
+Hospital Total Discharges Title XIX For Adults & Peds,Depreciation Cost,0.38638858120807335,0.38638858120807335
+Total Discharges Title XIX,Depreciation Cost,0.38638858120807335,0.38638858120807335
+Hospital Total Days Title XIX For Adults & Peds,Total Fixed Assets,0.38507982289223114,0.38507982289223114
+Total Days Title XIX,Total Current Assets,0.383327513087384,0.383327513087384
+Total Discharges Title XIX,Inventory,0.3811954348225869,0.3811954348225869
+Hospital Total Discharges Title XIX For Adults & Peds,Inventory,0.3811954348225869,0.3811954348225869
+Total Days Title XIX,Fixed Equipment,0.3809806886342537,0.3809806886342537
+Hospital Total Discharges Title XIX For Adults & Peds,Total Salaries (adjusted),0.38032598935793227,0.38032598935793227
+Total Discharges Title XIX,Total Salaries (adjusted),0.38032598935793227,0.38032598935793227
+Hospital Total Discharges Title XIX For Adults & Peds,Total Salaries From Worksheet A,0.37881142319148836,0.37881142319148836
+Total Discharges Title XIX,Total Salaries From Worksheet A,0.37881142319148836,0.37881142319148836
+Hospital Total Discharges Title XIX For Adults & Peds,Accounts Receivable,0.37725146880140736,0.37725146880140736
+Total Discharges Title XIX,Accounts Receivable,0.37725146880140736,0.37725146880140736
+Fixed Equipment,DRG Amounts After October 1,0.37546742181976056,0.37546742181976056
+Total Current Assets,Land Improvements,0.37497674717007634,0.37497674717007634
+Hospital Total Days Title XVIII For Adults & Peds,Total Current Liabilities,0.3749667414419288,0.3749667414419288
+Total Days Title XIX,Land Improvements,0.37492863310703306,0.37492863310703306
+Total Days Title XVIII,Total Current Liabilities,0.374820219821287,0.374820219821287
+Accounts Receivable,Fixed Equipment,0.37263175651916114,0.37263175651916114
+Total Days (V + XVIII + XIX + Unknown),Accounts Payable,0.3708741203333183,0.3708741203333183
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Liabilities,0.3706606964812923,0.3706606964812923
+Accounts Payable,Total Long Term Liabilities,0.36960595100758714,0.36960595100758714
+Land Improvements,DRG Amounts After October 1,0.3689392475717031,0.3689392475717031
+Total Bad Debt Expense,Total Assets,0.36835771603716333,0.36835771603716333
+Inventory,Total Long Term Liabilities,0.36725912806320954,0.36725912806320954
+Total Discharges Title XIX,Less Contractual Allowance and Discounts on Patients' Accounts,0.36587808783259207,0.36587808783259207
+Hospital Total Discharges Title XIX For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.36587808783259207,0.36587808783259207
+Total Days Title XVIII,Total Liabilities,0.36516599272809347,0.36516599272809347
+Hospital Total Days Title XVIII For Adults & Peds,Total Liabilities,0.3636688800250763,0.3636688800250763
+Total Bed Days Available,Accounts Payable,0.3614199209932603,0.3614199209932603
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Accounts Payable,0.3609849335137541,0.3609849335137541
+Hospital Total Days Title XIX For Adults & Peds,Total Assets,0.3608469154194643,0.3608469154194643
+Total Discharges (V + XVIII + XIX + Unknown),Total Current Liabilities,0.36037869831073893,0.36037869831073893
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Current Liabilities,0.36037869831073893,0.36037869831073893
+Total Liabilities,Less Contractual Allowance and Discounts on Patients' Accounts,0.3595478843601596,0.3595478843601596
+Total Days (V + XVIII + XIX + Unknown),Total Liabilities,0.357437177029172,0.357437177029172
+Hospital Total Days Title XIX For Adults & Peds,Buildings,0.3564117128099304,0.3564117128099304
+Land,Fixed Equipment,0.352528764310635,0.352528764310635
+Total Bad Debt Expense,Land Improvements,0.35182680567095503,0.35182680567095503
+Total Bad Debt Expense,Buildings,0.3494603483574527,0.3494603483574527
+Land,DRG Amounts After October 1,0.3494305837438516,0.3494305837438516
+Total Bed Days Available,Total Liabilities,0.3490110498238568,0.3490110498238568
+Hospital Total Discharges Title XIX For Adults & Peds,Major Movable Equipment,0.3484167882659969,0.3484167882659969
+Total Discharges Title XIX,Major Movable Equipment,0.3484167882659969,0.3484167882659969
+Total Days Title XIX,"Salaries, Wages, and Fees Payable",0.34785622677529004,0.34785622677529004
+Accounts Payable,Less Contractual Allowance and Discounts on Patients' Accounts,0.34780390256771737,0.34780390256771737
+Hospital Total Days Title XIX For Adults & Peds,Fixed Equipment,0.34606527638677675,0.34606527638677675
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Long Term Liabilities,-0.3457365913066982,0.3457365913066982
+Depreciation Cost,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.3454075129323261,0.3454075129323261
+Hospital Total Days Title XIX For Adults & Peds,Total Current Assets,0.34474232921909115,0.34474232921909115
+Hospital Total Bed Days Available For Adults & Peds,Total Liabilities,0.34405324905052315,0.34405324905052315
+Buildings,Fixed Equipment,0.34245010794117203,0.34245010794117203
+Total Days Title XVIII,Accounts Payable,0.3418263977927732,0.3418263977927732
+Hospital Total Bed Days Available For Adults & Peds,Accounts Payable,0.34153151925172504,0.34153151925172504
+Total Current Assets,Accounts Payable,0.3413132918964571,0.3413132918964571
+Land Improvements,Total Current Liabilities,0.3409491250925299,0.3409491250925299
+Total Bad Debt Expense,Fixed Equipment,0.33948280577917067,0.33948280577917067
+Hospital Total Days Title XIX For Adults & Peds,Land Improvements,0.33937852316806827,0.33937852316806827
+Hospital Total Days Title XVIII For Adults & Peds,Accounts Payable,0.33794917182697504,0.33794917182697504
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Current Liabilities,0.3376082651873921,0.3376082651873921
+Total Discharges Title XVIII,Total Current Liabilities,0.3376082651873921,0.3376082651873921
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Total Current Liabilities,-0.3346860659745839,0.3346860659745839
+Total Discharges (V + XVIII + XIX + Unknown),Total Liabilities,0.33180235119819484,0.33180235119819484
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Liabilities,0.33180235119819484,0.33180235119819484
+Total Days Title XIX,Prepaid Expenses,0.3289404341077885,0.3289404341077885
+Hospital Total Discharges Title XIX For Adults & Peds,Land Improvements,0.32769993891794197,0.32769993891794197
+Total Discharges Title XIX,Land Improvements,0.32769993891794197,0.32769993891794197
+Total Discharges Title XIX,Total Fixed Assets,0.32693558096494346,0.32693558096494346
+Hospital Total Discharges Title XIX For Adults & Peds,Total Fixed Assets,0.32693558096494346,0.32693558096494346
+Total Bad Debt Expense,Total Current Assets,0.32674253677741066,0.32674253677741066
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Liabilities,0.3263137215252186,0.3263137215252186
+Total Discharges Title XVIII,Total Liabilities,0.3263137215252186,0.3263137215252186
+Prepaid Expenses,Land Improvements,0.3257254963279902,0.3257254963279902
+Fixed Equipment,Total Assets,0.3237213458233685,0.3237213458233685
+Total Discharges Title XIX,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.32088010285638624,0.32088010285638624
+Hospital Total Discharges Title XIX For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.32088010285638624,0.32088010285638624
+Hospital Total Days Title XIX For Adults & Peds,"Salaries, Wages, and Fees Payable",0.31880434565337173,0.31880434565337173
+Total Discharges (V + XVIII + XIX + Unknown),Accounts Payable,0.3173386210157329,0.3173386210157329
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Accounts Payable,0.3173386210157329,0.3173386210157329
+Total Bad Debt Expense,"Salaries, Wages, and Fees Payable",0.31654722430006954,0.31654722430006954
+Total Days Title XIX,Land,0.3148517270113537,0.3148517270113537
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Fixed Equipment,-0.31434588195097424,0.31434588195097424
+Total Liabilities,DRG Amounts After October 1,0.30359040645346147,0.30359040645346147
+Hospital Total Discharges Title XIX For Adults & Peds,Fixed Equipment,0.30279131008400556,0.30279131008400556
+Total Discharges Title XIX,Fixed Equipment,0.30279131008400556,0.30279131008400556
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Prepaid Expenses,-0.2999344106009038,0.2999344106009038
+Total Current Liabilities,DRG Amounts After October 1,0.29801466670482063,0.29801466670482063
+Total Bad Debt Expense,Prepaid Expenses,0.2978499814488587,0.2978499814488587
+Hospital Total Days Title XIX For Adults & Peds,Prepaid Expenses,0.2959759843896354,0.2959759843896354
+Total Discharges Title XIX,Total Assets,0.29462865617846634,0.29462865617846634
+Hospital Total Discharges Title XIX For Adults & Peds,Total Assets,0.29462865617846634,0.29462865617846634
+Total Discharges Title XVIII,Accounts Payable,0.2944724059181676,0.2944724059181676
+Hospital Total Discharges Title XVIII For Adults & Peds,Accounts Payable,0.2944724059181676,0.2944724059181676
+Total Discharges Title XIX,Buildings,0.2944698739890269,0.2944698739890269
+Hospital Total Discharges Title XIX For Adults & Peds,Buildings,0.2944698739890269,0.2944698739890269
+Total Bed Days Available,Number of Beds + Total for all Subproviders,0.2878037024317416,0.2878037024317416
+Number of Beds + Total for all Subproviders,Hospital Total Bed Days Available For Adults & Peds,0.2868476268517193,0.2868476268517193
+Accounts Receivable,Accounts Payable,0.28640476154259265,0.28640476154259265
+Total Discharges (V + XVIII + XIX + Unknown),Number of Beds + Total for all Subproviders,0.28607765522839224,0.28607765522839224
+Number of Beds + Total for all Subproviders,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.2860776552283922,0.2860776552283922
+Total Days (V + XVIII + XIX + Unknown),Number of Beds + Total for all Subproviders,0.28262796464892304,0.28262796464892304
+Number of Beds + Total for all Subproviders,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.28244024409902124,0.28244024409902124
+Total Discharges Title XIX,Total Current Assets,0.282270226125595,0.282270226125595
+Hospital Total Discharges Title XIX For Adults & Peds,Total Current Assets,0.282270226125595,0.282270226125595
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Land Improvements,-0.2802228272308162,0.2802228272308162
+Hospital Total Discharges Title XIX For Adults & Peds,"Salaries, Wages, and Fees Payable",0.2778585348670128,0.2778585348670128
+Total Discharges Title XIX,"Salaries, Wages, and Fees Payable",0.2778585348670128,0.2778585348670128
+Total Current Assets,Fixed Equipment,0.27461350395008743,0.27461350395008743
+Total Days Title XVIII,Total Long Term Liabilities,0.2741744942997028,0.2741744942997028
+Fixed Equipment,"Salaries, Wages, and Fees Payable",0.2735199936356228,0.2735199936356228
+Number of Beds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.27333778127733077,0.27333778127733077
+Number of Beds,Total Discharges (V + XVIII + XIX + Unknown),0.27333778127733077,0.27333778127733077
+Number of Beds,Total Bed Days Available,0.27264738438706393,0.27264738438706393
+Hospital Total Days Title XVIII For Adults & Peds,Total Long Term Liabilities,0.27204533192627744,0.27204533192627744
+Number of Beds,Hospital Total Bed Days Available For Adults & Peds,0.2717737397338697,0.2717737397338697
+Total Days (V + XVIII + XIX + Unknown),Number of Beds,0.2687269338887751,0.2687269338887751
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Total Long Term Liabilities,0.26855621107639316,0.26855621107639316
+Number of Beds,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,0.268428730090015,0.268428730090015
+Total Days Title XVIII,Number of Beds + Total for all Subproviders,0.265040953655136,0.265040953655136
+Number of Beds + Total for all Subproviders,Hospital Total Days Title XVIII For Adults & Peds,0.26298895629085167,0.26298895629085167
+Total Discharges Title XVIII,Number of Beds + Total for all Subproviders,0.260764182747687,0.260764182747687
+Number of Beds + Total for all Subproviders,Hospital Total Discharges Title XVIII For Adults & Peds,0.260764182747687,0.260764182747687
+Total Bad Debt Expense,Total Current Liabilities,0.25858949930360264,0.25858949930360264
+Land Improvements,Accounts Payable,0.2565421595235682,0.2565421595235682
+Total Discharges Title XIX,Prepaid Expenses,0.25633632998127265,0.25633632998127265
+Hospital Total Discharges Title XIX For Adults & Peds,Prepaid Expenses,0.25633632998127265,0.25633632998127265
+Total Days Title XVIII,Number of Beds,0.25433112594027796,0.25433112594027796
+Number of Beds,Hospital Total Days Title XVIII For Adults & Peds,0.25257174910999364,0.25257174910999364
+Hospital Total Days Title XIX For Adults & Peds,Land,0.2510768975373146,0.2510768975373146
+Number of Beds,Total Discharges Title XVIII,0.25098075874237896,0.25098075874237896
+Number of Beds,Hospital Total Discharges Title XVIII For Adults & Peds,0.25098075874237896,0.25098075874237896
+Total Days Title XIX,Total Liabilities,0.24937949213558114,0.24937949213558114
+Total Days (V + XVIII + XIX + Unknown),Total Long Term Liabilities,0.24870596339149578,0.24870596339149578
+Total Long Term Liabilities,Less Contractual Allowance and Discounts on Patients' Accounts,0.2466748058725894,0.2466748058725894
+FTE - Employees on Payroll,Number of Beds + Total for all Subproviders,0.24664526502875356,0.24664526502875356
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Land,-0.24509310876521773,0.24509310876521773
+Hospital Total Discharges Title XVIII For Adults & Peds,Total Long Term Liabilities,0.24341053431392887,0.24341053431392887
+Total Discharges Title XVIII,Total Long Term Liabilities,0.24341053431392887,0.24341053431392887
+Total Days Title XIX,Total Current Liabilities,0.2429756734436609,0.2429756734436609
+Total Bad Debt Expense,Total Liabilities,0.24031096346337316,0.24031096346337316
+Total Bed Days Available,Total Long Term Liabilities,0.23953579121923452,0.23953579121923452
+Hospital Total Bed Days Available For Adults & Peds,Total Long Term Liabilities,0.23826413410567554,0.23826413410567554
+Number of Beds + Total for all Subproviders,Less Contractual Allowance and Discounts on Patients' Accounts,0.2373117934885804,0.2373117934885804
+Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,Total Long Term Liabilities,0.23729868261499537,0.23729868261499537
+Total Discharges (V + XVIII + XIX + Unknown),Total Long Term Liabilities,0.23729868261499537,0.23729868261499537
+Total Long Term Liabilities,DRG Amounts After October 1,0.23606440028999132,0.23606440028999132
+Total Discharges Title XIX,Land,0.2358025401668068,0.2358025401668068
+Hospital Total Discharges Title XIX For Adults & Peds,Land,0.2358025401668068,0.2358025401668068
+FTE - Employees on Payroll,Number of Beds,0.23390630582767755,0.23390630582767755
+Number of Beds + Total for all Subproviders,Less Total Operating Expense,0.2312210920915714,0.2312210920915714
+Total Days Title XIX,Accounts Payable,0.22891703998352458,0.22891703998352458
+Number of Beds + Total for all Subproviders,Depreciation Cost,0.22817276957303267,0.22817276957303267
+Number of Beds,Less Contractual Allowance and Discounts on Patients' Accounts,0.224292460662789,0.224292460662789
+Hospital Number of Beds For Adults & Peds,Hospital Total Bed Days Available For Adults & Peds,0.22397564466045958,0.22397564466045958
+Hospital Number of Beds For Adults & Peds,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,0.22334164237606258,0.22334164237606258
+Total Discharges (V + XVIII + XIX + Unknown),Hospital Number of Beds For Adults & Peds,0.22334164237606258,0.22334164237606258
+Number of Beds + Total for all Subproviders,Inventory,0.22192613313858187,0.22192613313858187
+Number of Beds + Total for all Subproviders,Total Salaries (adjusted),0.22114692694486818,0.22114692694486818
+Number of Beds + Total for all Subproviders,Total Salaries From Worksheet A,0.22107096839306078,0.22107096839306078
+Total Bed Days Available,Hospital Number of Beds For Adults & Peds,0.22042948895334177,0.22042948895334177
+Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,Hospital Number of Beds For Adults & Peds,0.2202402554611992,0.2202402554611992
+Hospital Total Days Title XIX For Adults & Peds,Total Liabilities,0.21986441910957571,0.21986441910957571
+Number of Beds,Less Total Operating Expense,0.2192993983855738,0.2192993983855738
+Number of Beds,Depreciation Cost,0.21887287038472497,0.21887287038472497
+Accounts Payable,DRG Amounts After October 1,0.21698703402179698,0.21698703402179698
+Total Days (V + XVIII + XIX + Unknown),Hospital Number of Beds For Adults & Peds,0.21652510497839486,0.21652510497839486
+Number of Beds,Inventory,0.21270884841837523,0.21270884841837523
+Hospital Total Days Title XVIII For Adults & Peds,Hospital Number of Beds For Adults & Peds,0.21179675685933333,0.21179675685933333
+Total Bad Debt Expense,Accounts Payable,0.211649219957125,0.211649219957125
+Number of Beds,Total Salaries (adjusted),0.210100236172819,0.210100236172819
+Total Days Title XVIII,Hospital Number of Beds For Adults & Peds,0.20973061336379722,0.20973061336379722
+Number of Beds,Total Salaries From Worksheet A,0.20967365199201157,0.20967365199201157
+Total Discharges Title XVIII,Hospital Number of Beds For Adults & Peds,0.20904892173963582,0.20904892173963582
+Hospital Number of Beds For Adults & Peds,Hospital Total Discharges Title XVIII For Adults & Peds,0.20904892173963582,0.20904892173963582
+Number of Beds + Total for all Subproviders,Major Movable Equipment,0.2066976169267779,0.2066976169267779
+Prepaid Expenses,Fixed Equipment,0.2030764176413427,0.2030764176413427
+Number of Beds + Total for all Subproviders,Total Fixed Assets,0.201270245461593,0.201270245461593
+Number of Beds,Major Movable Equipment,0.1964329329291214,0.1964329329291214
+Hospital Total Days Title XIX For Adults & Peds,Total Current Liabilities,0.19540855386576683,0.19540855386576683
+Total Days Title XIX,Total Long Term Liabilities,0.1950003280316254,0.1950003280316254
+Number of Beds,Total Fixed Assets,0.19441730912154725,0.19441730912154725
+Number of Beds + Total for all Subproviders,DRG Amounts After October 1,0.19370040928969667,0.19370040928969667
+FTE - Employees on Payroll,Hospital Number of Beds For Adults & Peds,0.19134261976440853,0.19134261976440853
+Total Days Title XIX,Number of Beds + Total for all Subproviders,0.1876931348267389,0.1876931348267389
+Number of Beds + Total for all Subproviders,Buildings,0.18700406105738812,0.18700406105738812
+Number of Beds + Total for all Subproviders,Accounts Receivable,0.1855617878117539,0.1855617878117539
+Number of Beds,DRG Amounts After October 1,0.18495274022194957,0.18495274022194957
+Number of Beds + Total for all Subproviders,Total Bad Debt Expense,0.18412388135929922,0.18412388135929922
+Hospital Total Days Title XIX For Adults & Peds,Total Long Term Liabilities,0.18315324132008284,0.18315324132008284
+Hospital Number of Beds For Adults & Peds,Less Contractual Allowance and Discounts on Patients' Accounts,0.18094115146913434,0.18094115146913434
+Number of Beds,Buildings,0.1789444755356664,0.1789444755356664
+Hospital Number of Beds For Adults & Peds,Less Total Operating Expense,0.17776101863687757,0.17776101863687757
+Hospital Number of Beds For Adults & Peds,Depreciation Cost,0.1772624817302026,0.1772624817302026
+Number of Beds + Total for all Subproviders,Total Assets,0.17707609539348584,0.17707609539348584
+Total Days Title XIX,Number of Beds,0.17577443680838786,0.17577443680838786
+State Code,Hospital Total Discharges Title XIX For Adults & Peds,-0.1738472009110527,0.1738472009110527
+State Code,Total Discharges Title XIX,-0.1738472009110527,0.1738472009110527
+Number of Beds,Total Bad Debt Expense,0.17379352514529806,0.17379352514529806
+Total Bad Debt Expense,Total Long Term Liabilities,0.17330974604184501,0.17330974604184501
+Number of Beds,Accounts Receivable,0.17244541026963128,0.17244541026963128
+Hospital Number of Beds For Adults & Peds,Total Salaries (adjusted),0.1723660928846413,0.1723660928846413
+Hospital Number of Beds For Adults & Peds,Total Salaries From Worksheet A,0.17205070577725487,0.17205070577725487
+Number of Beds,Total Assets,0.17073363274577324,0.17073363274577324
+Number of Beds + Total for all Subproviders,Land,0.16984928006116362,0.16984928006116362
+Hospital Number of Beds For Adults & Peds,Inventory,0.16893973635918683,0.16893973635918683
+Number of Beds + Total for all Subproviders,Hospital Total Days Title XIX For Adults & Peds,0.16852255920920373,0.16852255920920373
+State Code,Total Days Title XIX,-0.16820817577538755,0.16820817577538755
+State Code,Hospital Total Days Title XIX For Adults & Peds,-0.16671089156544444,0.16671089156544444
+Number of Beds + Total for all Subproviders,"Salaries, Wages, and Fees Payable",0.16630295121229083,0.16630295121229083
+Hospital Total Days Title XIX For Adults & Peds,Accounts Payable,0.16412676516507305,0.16412676516507305
+Number of Beds + Total for all Subproviders,Fixed Equipment,0.1640762597269841,0.1640762597269841
+Number of Beds,Land,0.1632270409716847,0.1632270409716847
+Number of Beds,"Salaries, Wages, and Fees Payable",0.16027210051578486,0.16027210051578486
+Hospital Number of Beds For Adults & Peds,Major Movable Equipment,0.15854079354522777,0.15854079354522777
+Number of Beds + Total for all Subproviders,Land Improvements,0.15784643802359272,0.15784643802359272
+Hospital Number of Beds For Adults & Peds,Total Fixed Assets,0.1574947942343256,0.1574947942343256
+Number of Beds,Hospital Total Days Title XIX For Adults & Peds,0.15716278077405996,0.15716278077405996
+Total Discharges Title XIX,Total Liabilities,0.15505101844755861,0.15505101844755861
+Hospital Total Discharges Title XIX For Adults & Peds,Total Liabilities,0.15505101844755861,0.15505101844755861
+Hospital Number of Beds For Adults & Peds,DRG Amounts After October 1,0.15221410710850497,0.15221410710850497
+Number of Beds,Fixed Equipment,0.15194256583143187,0.15194256583143187
+Number of Beds,Land Improvements,0.1498894220049822,0.1498894220049822
+Fixed Equipment,Total Current Liabilities,0.147846150983015,0.147846150983015
+Number of Beds + Total for all Subproviders,Total Current Assets,0.14751056538950297,0.14751056538950297
+Total Discharges Title XIX,Total Long Term Liabilities,0.1460967357459907,0.1460967357459907
+Hospital Total Discharges Title XIX For Adults & Peds,Total Long Term Liabilities,0.1460967357459907,0.1460967357459907
+Total Discharges Title XIX,Number of Beds + Total for all Subproviders,0.14567308882311336,0.14567308882311336
+Number of Beds + Total for all Subproviders,Hospital Total Discharges Title XIX For Adults & Peds,0.14567308882311333,0.14567308882311333
+Number of Beds + Total for all Subproviders,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.14486942034484365,0.14486942034484365
+Hospital Number of Beds For Adults & Peds,Buildings,0.14378913843166016,0.14378913843166016
+Less: Allowances for Uncollectible Notes and Accounts Receivable,Accounts Payable,-0.14310174519486601,0.14310174519486601
+Number of Beds,Total Current Assets,0.14169409740443406,0.14169409740443406
+Hospital Number of Beds For Adults & Peds,Total Bad Debt Expense,0.13965934057153073,0.13965934057153073
+Hospital Number of Beds For Adults & Peds,Accounts Receivable,0.13940159305359676,0.13940159305359676
+Hospital Number of Beds For Adults & Peds,Total Assets,0.1372985754020966,0.1372985754020966
+Total Days Title XIX,Hospital Number of Beds For Adults & Peds,0.13634581123834663,0.13634581123834663
+Number of Beds,Hospital Total Discharges Title XIX For Adults & Peds,0.13576712499964444,0.13576712499964444
+Number of Beds,Total Discharges Title XIX,0.13576712499964444,0.13576712499964444
+Number of Beds + Total for all Subproviders,Prepaid Expenses,0.13556898394759614,0.13556898394759614
+Hospital Number of Beds For Adults & Peds,"Salaries, Wages, and Fees Payable",0.134748777115709,0.134748777115709
+Hospital Total Discharges Title XIX For Adults & Peds,Accounts Payable,0.13280441711651447,0.13280441711651447
+Total Discharges Title XIX,Accounts Payable,0.13280441711651447,0.13280441711651447
+Hospital Number of Beds For Adults & Peds,Land,0.13186718029324793,0.13186718029324793
+Number of Beds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.13174332581341755,0.13174332581341755
+Number of Beds,Prepaid Expenses,0.1286560725158375,0.1286560725158375
+Hospital Total Days Title XIX For Adults & Peds,Hospital Number of Beds For Adults & Peds,0.12407496303895311,0.12407496303895311
+Hospital Number of Beds For Adults & Peds,Fixed Equipment,0.12297205601297227,0.12297205601297227
+State Code,DRG Amounts After October 1,-0.12149600917029531,0.12149600917029531
+Hospital Number of Beds For Adults & Peds,Land Improvements,0.12139580101785089,0.12139580101785089
+Number of Beds + Total for all Subproviders,Total Current Liabilities,0.11884552316027046,0.11884552316027046
+Hospital Number of Beds For Adults & Peds,Total Current Assets,0.11472816307044868,0.11472816307044868
+State Code,Less: Allowances for Uncollectible Notes and Accounts Receivable,0.11348475248311352,0.11348475248311352
+Number of Beds,Total Current Liabilities,0.11313261020295853,0.11313261020295853
+Total Discharges Title XIX,Total Current Liabilities,0.10944398856790505,0.10944398856790505
+Hospital Total Discharges Title XIX For Adults & Peds,Total Current Liabilities,0.10944398856790505,0.10944398856790505
+Total Discharges Title XIX,Hospital Number of Beds For Adults & Peds,0.10732801223715666,0.10732801223715666
+Hospital Number of Beds For Adults & Peds,Hospital Total Discharges Title XIX For Adults & Peds,0.10732801223715664,0.10732801223715664
+Hospital Number of Beds For Adults & Peds,Less: Allowances for Uncollectible Notes and Accounts Receivable,-0.10607530646708747,0.10607530646708747
+Number of Beds + Total for all Subproviders,Total Liabilities,0.10575283923199769,0.10575283923199769
+Number of Beds + Total for all Subproviders,Accounts Payable,0.1051144974621746,0.1051144974621746
+Hospital Number of Beds For Adults & Peds,Prepaid Expenses,0.10485888819623583,0.10485888819623583
+State Code,Accounts Receivable,-0.10308187428634032,0.10308187428634032
+Number of Beds,Accounts Payable,0.1020323392029489,0.1020323392029489
+Number of Beds,Total Liabilities,0.09901308206698448,0.09901308206698448
+State Code,Less Contractual Allowance and Discounts on Patients' Accounts,-0.09444720557532574,0.09444720557532574
+Hospital Number of Beds For Adults & Peds,Total Current Liabilities,0.09124233772394355,0.09124233772394355
+Fixed Equipment,Total Liabilities,0.08988486036351445,0.08988486036351445
+State Code,Land,-0.08309949889214899,0.08309949889214899
+Hospital Number of Beds For Adults & Peds,Total Liabilities,0.08040284134798624,0.08040284134798624
+Hospital Number of Beds For Adults & Peds,Accounts Payable,0.0792231665811172,0.0792231665811172
+Fixed Equipment,Accounts Payable,0.07728189164804113,0.07728189164804113
+Number of Beds + Total for all Subproviders,Total Long Term Liabilities,0.07325298326118486,0.07325298326118486
+Number of Beds,Total Long Term Liabilities,0.06747306935485788,0.06747306935485788
+State Code,Prepaid Expenses,-0.06704116174607878,0.06704116174607878
+State Code,Total Discharges (V + XVIII + XIX + Unknown),-0.060205155526983835,0.060205155526983835
+State Code,Hospital Total Discharges (V + XVIII + XIX + Unknown) For Adults & Peds,-0.060205155526983835,0.060205155526983835
+State Code,Total Liabilities,-0.05956985899343849,0.05956985899343849
+State Code,Hospital Total Bed Days Available For Adults & Peds,-0.05814182982754319,0.05814182982754319
+State Code,Total Current Assets,-0.057663320494879385,0.057663320494879385
+State Code,Total Discharges Title XVIII,-0.057260928323444205,0.057260928323444205
+State Code,Hospital Total Discharges Title XVIII For Adults & Peds,-0.057260928323444205,0.057260928323444205
+State Code,Total Current Liabilities,-0.055837985518158405,0.055837985518158405
+Hospital Number of Beds For Adults & Peds,Total Long Term Liabilities,0.05516490726874097,0.05516490726874097
+State Code,Total Bed Days Available,-0.05419258280630665,0.05419258280630665
+State Code,Total Assets,-0.05382514449634993,0.05382514449634993
+State Code,Hospital Total Days Title XVIII For Adults & Peds,-0.05360187672987073,0.05360187672987073
+State Code,Hospital Total Days (V + XVIII + XIX + Unknown) For Adults & Peds,-0.052559572489727126,0.052559572489727126
+State Code,Land Improvements,-0.051910159513907934,0.051910159513907934
+State Code,Total Days Title XVIII,-0.051308221533995134,0.051308221533995134
+State Code,Total Long Term Liabilities,-0.04789516820873276,0.04789516820873276
+State Code,"Salaries, Wages, and Fees Payable",-0.04537087486681473,0.04537087486681473
+State Code,Total Days (V + XVIII + XIX + Unknown),-0.04456193819056357,0.04456193819056357
+State Code,Total Salaries From Worksheet A,-0.03848189275893149,0.03848189275893149
+State Code,Less Total Operating Expense,-0.03802412697149213,0.03802412697149213
+State Code,Accounts Payable,-0.03578518956476374,0.03578518956476374
+State Code,Total Fixed Assets,-0.035622526635820904,0.035622526635820904
+Fixed Equipment,Total Long Term Liabilities,0.034296071040388294,0.034296071040388294
+State Code,Total Salaries (adjusted),-0.03414185643260678,0.03414185643260678
+State Code,Major Movable Equipment,-0.033819932472426435,0.033819932472426435
+State Code,Fixed Equipment,0.03187235354984318,0.03187235354984318
+State Code,Inventory,-0.027269120961426696,0.027269120961426696
+State Code,Buildings,-0.025941706135318418,0.025941706135318418
+State Code,Depreciation Cost,-0.005725949039104167,0.005725949039104167
+State Code,Total Bad Debt Expense,-0.0016010476669906686,0.0016010476669906686
+State Code,FTE - Employees on Payroll,-0.0014724379970656829,0.0014724379970656829
+State Code,Hospital Number of Beds For Adults & Peds,0.0014040738700810615,0.0014040738700810615
+State Code,Number of Beds + Total for all Subproviders,-0.0008088260403670488,0.0008088260403670488
+State Code,Number of Beds,-0.00043924800953291276,0.00043924800953291276

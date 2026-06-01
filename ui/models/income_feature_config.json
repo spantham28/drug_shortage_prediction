@@ -1,0 +1,87 @@
+{
+  "features": [
+    {
+      "name": "Total Assets",
+      "transform": "none",
+      "median": 197574753.5
+    },
+    {
+      "name": "Inventory",
+      "transform": "none",
+      "median": 4114580.5
+    },
+    {
+      "name": "Less Total Operating Expense",
+      "transform": "none",
+      "median": 194893191.0
+    },
+    {
+      "name": "Less Contractual Allowance and Discounts on Patients' Accounts",
+      "transform": "none",
+      "median": 657017004.0
+    },
+    {
+      "name": "Total Days (V + XVIII + XIX + Unknown)",
+      "transform": "none",
+      "median": 35786.5
+    },
+    {
+      "name": "Major Movable Equipment",
+      "transform": "none",
+      "median": 61653873.0
+    },
+    {
+      "name": "Depreciation Cost",
+      "transform": "none",
+      "median": 9188252.0
+    },
+    {
+      "name": "Total Fixed Assets",
+      "transform": "none",
+      "median": 89725793.5
+    },
+    {
+      "name": "Total Discharges Title XVIII",
+      "transform": "none",
+      "median": 2569.5
+    },
+    {
+      "name": "Total Liabilities",
+      "transform": "square",
+      "median": 72578627.0
+    },
+    {
+      "name": "DRG Amounts After October 1",
+      "transform": "none",
+      "median": 11274338.0
+    },
+    {
+      "name": "Accounts Receivable",
+      "transform": "none",
+      "median": 71465850.5
+    },
+    {
+      "name": "Hospital Number of Beds For Adults & Peds",
+      "transform": "log",
+      "median": 149.5,
+      "offset": 0.0
+    },
+    {
+      "name": "Total Current Assets",
+      "transform": "sqrt",
+      "median": 56328841.5,
+      "offset": 1356905659.0
+    },
+    {
+      "name": "Profit",
+      "transform": "none",
+      "type": "categorical",
+      "options": [
+        "Profit",
+        "Loss"
+      ]
+    }
+  ],
+  "model_name": "GradientBoostingRegressor",
+  "target": "Net Income"
+}
