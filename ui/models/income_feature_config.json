@@ -82,6 +82,6 @@
       ]
     }
   ],
-  "model_name": "GradientBoostingRegressor",
+  "model_name": "RandomForestRegressor",
   "target": "Net Income"
 }

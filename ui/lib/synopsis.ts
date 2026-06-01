@@ -80,16 +80,16 @@ export const modelSynopsis = {
       {
         step: "Model selection",
         detail:
-          "12 regressors tuned with GridSearchCV minimizing sMAPE on dollar Net Income. GradientBoostingRegressor selected as best performer.",
+          "12 regressors tuned with GridSearchCV minimizing sMAPE on dollar Net Income. RandomForestRegressor selected as best performer (lowest test sMAPE per model_performance_results.csv).",
       },
     ],
     results: [
-      { metric: "Best model", value: "GradientBoostingRegressor" },
-      { metric: "Test sMAPE", value: "66.92%" },
-      { metric: "Test RMSE", value: "$23,795,798" },
-      { metric: "Test R²", value: "0.738" },
-      { metric: "Test Adjusted R²", value: "0.730" },
-      { metric: "Sign prediction accuracy", value: "99.4%" },
+      { metric: "Best model", value: "RandomForestRegressor" },
+      { metric: "Test sMAPE", value: "64.11%" },
+      { metric: "Test RMSE", value: "$26,060,227" },
+      { metric: "Test R²", value: "0.686" },
+      { metric: "Test Adjusted R²", value: "0.676" },
+      { metric: "Sign prediction accuracy", value: "100%" },
       { metric: "Outliers removed (train)", value: "~2% via Isolation Forest" },
     ],
     topInformationGain: [

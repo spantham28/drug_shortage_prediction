@@ -18,8 +18,8 @@ from imblearn.over_sampling import SMOTE
 from sklearn.ensemble import (
     ExtraTreesClassifier,
     GradientBoostingClassifier,
-    GradientBoostingRegressor,
     RandomForestClassifier,
+    RandomForestRegressor,
 )
 from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.preprocessing import StandardScaler
@@ -282,13 +282,13 @@ def export_income_model() -> None:
     X_fit = np.vstack([X_train, X_val])
     y_fit = np.concatenate([y_train, y_val])
 
-    model = GradientBoostingRegressor(
-        learning_rate=0.1,
-        max_depth=5,
+    model = RandomForestRegressor(
+        max_depth=15,
+        min_samples_leaf=5,
         min_samples_split=10,
         n_estimators=100,
-        subsample=0.8,
         random_state=42,
+        n_jobs=-1,
     )
     model.fit(X_fit, y_fit)
 
@@ -298,7 +298,7 @@ def export_income_model() -> None:
         json.dump(
             {
                 **feature_config,
-                "model_name": "GradientBoostingRegressor",
+                "model_name": "RandomForestRegressor",
                 "target": "Net Income",
             },
             f,

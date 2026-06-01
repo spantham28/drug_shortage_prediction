@@ -100,7 +100,7 @@ def predict_income(payload: dict) -> dict:
     return {
         "net_income": prediction,
         "net_income_formatted": f"${prediction:,.0f}",
-        "model_name": config.get("model_name", "GradientBoostingRegressor"),
+        "model_name": config.get("model_name", "RandomForestRegressor"),
         "target": config.get("target", "Net Income"),
     }
 

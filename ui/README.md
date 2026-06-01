@@ -74,4 +74,4 @@ ui/
 | Tab | Model | Source |
 |-----|-------|--------|
 | Shortage | EnsembleTop3 (ExtraTrees + RandomForest + GradientBoosting) | `drug_shortage_timeline_prediction/` |
-| Net Income | GradientBoostingRegressor | `drug_shortage_cost_prediction/` |
+| Net Income | RandomForestRegressor | `drug_shortage_cost_prediction/` |
