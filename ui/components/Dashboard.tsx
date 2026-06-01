@@ -16,14 +16,6 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
   { id: "synopsis", label: "Model Methodology", icon: "◈" },
 ];
 
-function formatCurrency(n: number) {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
-
 function formatTransform(t: string) {
   const map: Record<string, string> = {
     none: "Original",
@@ -142,7 +134,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <header className="relative overflow-hidden border-b border-white/8">
+      <header className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 opacity-40" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0)`,
           backgroundSize: "32px 32px",
@@ -164,7 +156,7 @@ export default function Dashboard() {
 
       <main className="mx-auto max-w-6xl px-6 py-10">
         {/* Tabs */}
-        <nav className="mb-8 flex flex-wrap gap-2 rounded-2xl border border-white/8 bg-navy-900/50 p-2">
+        <nav className="mb-8 flex flex-wrap gap-2 rounded-2xl border border-white/10 bg-navy-900/50 p-2">
           {TABS.map((tab) => (
             <button
               key={tab.id}
@@ -286,7 +278,7 @@ export default function Dashboard() {
                     </p>
                   </div>
 
-                  <div className="relative h-3 overflow-hidden rounded-full bg-white/8">
+                  <div className="relative h-3 overflow-hidden rounded-full bg-white/10">
                     <div
                       className="absolute inset-y-0 left-0 rounded-full transition-all duration-700"
                       style={{
@@ -301,7 +293,7 @@ export default function Dashboard() {
 
                   <p className="text-sm text-slate-400">{shortageResult.shortage_label}</p>
 
-                  <div className="mt-auto rounded-xl border border-white/8 bg-white/4 p-4 text-xs text-slate-500">
+                  <div className="mt-auto rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-500">
                     <p>
                       Model: <span className="text-slate-300">{shortageResult.model_type}</span>
                     </p>
@@ -493,10 +485,10 @@ export default function Dashboard() {
               <h3 className="mb-3 mt-8 text-xs font-semibold uppercase tracking-widest text-teal-400">
                 Top Information Gain Features
               </h3>
-              <div className="mb-6 overflow-hidden rounded-xl border border-white/8">
+              <div className="mb-6 overflow-hidden rounded-xl border border-white/10">
                 <table className="w-full text-xs">
                   <thead>
-                    <tr className="border-b border-white/8 bg-white/4 text-left text-slate-500">
+                    <tr className="border-b border-white/10 bg-white/5 text-left text-slate-500">
                       <th className="px-3 py-2 font-medium">Feature</th>
                       <th className="px-3 py-2 font-medium">IG</th>
                     </tr>
@@ -515,10 +507,10 @@ export default function Dashboard() {
               <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-teal-400">
                 Top Nonlinear Correlations with Net Income
               </h3>
-              <div className="mb-6 overflow-hidden rounded-xl border border-white/8">
+              <div className="mb-6 overflow-hidden rounded-xl border border-white/10">
                 <table className="w-full text-xs">
                   <thead>
-                    <tr className="border-b border-white/8 bg-white/4 text-left text-slate-500">
+                    <tr className="border-b border-white/10 bg-white/5 text-left text-slate-500">
                       <th className="px-3 py-2 font-medium">Feature</th>
                       <th className="px-3 py-2 font-medium">Transform</th>
                       <th className="px-3 py-2 font-medium">|r|</th>
@@ -552,7 +544,7 @@ export default function Dashboard() {
         )}
       </main>
 
-      <footer className="border-t border-white/8 py-8 text-center text-xs text-slate-600">
+      <footer className="border-t border-white/10 py-8 text-center text-xs text-slate-600">
         Drug Shortage Platform · Models trained on NADAC pricing signals &amp; CMS hospital cost reports
       </footer>
     </div>

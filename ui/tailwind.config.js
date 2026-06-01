@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -30,7 +29,7 @@ const config: Config = {
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",
-        pulse-soft: "pulseSoft 3s ease-in-out infinite",
+        "pulse-soft": "pulseSoft 3s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -46,5 +45,3 @@ const config: Config = {
   },
   plugins: [],
 };
-
-export default config;
