@@ -9,9 +9,34 @@ from pathlib import Path
 import joblib
 import numpy as np
 
-MODELS_DIR = Path(__file__).resolve().parent.parent.parent / "models"
+_MODEL_MARKER = "shortage_scaler.pkl"
 
-# Allow imports when running as a script from api/
+
+def _resolve_models_dir() -> Path:
+    """Locate models/ across local dev and Vercel serverless layouts."""
+    candidates = [
+        Path(__file__).resolve().parent.parent.parent / "models",
+        Path(__file__).resolve().parent.parent / "models",
+        Path.cwd() / "models",
+        Path("/var/task/models"),
+        Path("/var/task/ui/models"),
+    ]
+    seen: set[str] = set()
+    for path in candidates:
+        key = str(path)
+        if key in seen:
+            continue
+        seen.add(key)
+        if (path / _MODEL_MARKER).exists():
+            return path
+    raise FileNotFoundError(
+        "Model artifacts not found. Expected shortage_scaler.pkl under models/. "
+        f"Tried: {', '.join(str(p) for p in candidates)}"
+    )
+
+
+MODELS_DIR = _resolve_models_dir()
+
 if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
 

@@ -41,7 +41,7 @@ cd ui
 vercel dev
 ```
 
-Next.js route handlers at `/api/shortage` and `/api/income` proxy to Python at `/api/py-shortage` and `/api/py-income`.
+The UI calls Python serverless functions directly at `/api/py-shortage` and `/api/py-income`.
 
 ## Deploy to Vercel
 

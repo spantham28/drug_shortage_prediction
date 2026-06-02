@@ -1,8 +1,11 @@
 {
   "functions": {
-    "api/**/*.py": {
-      "excludeFiles": "{api/lib/**,**/lib/**}",
-      "includeFiles": "models/**",
+    "api/py-shortage.py": {
+      "includeFiles": "{models/**,api/lib/**}",
+      "maxDuration": 30
+    },
+    "api/py-income.py": {
+      "includeFiles": "{models/**,api/lib/**}",
       "maxDuration": 30
     }
   }

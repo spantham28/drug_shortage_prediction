@@ -26,6 +26,16 @@ function formatTransform(t: string) {
   return map[t] ?? t;
 }
 
+async function parseJsonResponse(res: Response): Promise<Record<string, unknown>> {
+  const text = await res.text();
+  if (text.trimStart().startsWith("<")) {
+    throw new Error(
+      "Server returned an HTML error page instead of JSON. Redeploy on Vercel after the latest fix, or run `vercel dev` locally."
+    );
+  }
+  return JSON.parse(text) as Record<string, unknown>;
+}
+
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState<TabId>("shortage");
 
@@ -50,9 +60,9 @@ export default function Dashboard() {
 
   const loadFeatureSchema = useCallback(async () => {
     try {
-      const res = await fetch("/api/income");
-      if (!res.ok) throw new Error("Failed to load feature schema");
-      const data: IncomeFeatureSchema = await res.json();
+      const res = await fetch("/api/py-income");
+      const data = (await parseJsonResponse(res)) as unknown as IncomeFeatureSchema;
+      if (!res.ok) throw new Error((data as { error?: string }).error ?? "Failed to load feature schema");
       setFeatureSchema(data);
       const defaults: Record<string, string> = {};
       data.features.forEach((f) => {
@@ -86,14 +96,14 @@ export default function Dashboard() {
         }
         payload[field.key] = Number(val);
       }
-      const res = await fetch("/api/shortage", {
+      const res = await fetch("/api/py-shortage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Prediction failed");
-      setShortageResult(data);
+      const data = await parseJsonResponse(res);
+      if (!res.ok) throw new Error(String(data.error ?? "Prediction failed"));
+      setShortageResult(data as unknown as ShortageResult);
     } catch (err) {
       setShortageError(err instanceof Error ? err.message : "Prediction failed");
     } finally {
@@ -116,14 +126,14 @@ export default function Dashboard() {
           payload[f.name] = Number(val ?? f.median ?? 0);
         }
       });
-      const res = await fetch("/api/income", {
+      const res = await fetch("/api/py-income", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Prediction failed");
-      setIncomeResult(data);
+      const data = await parseJsonResponse(res);
+      if (!res.ok) throw new Error(String(data.error ?? "Prediction failed"));
+      setIncomeResult(data as unknown as IncomeResult);
     } catch (err) {
       setIncomeError(err instanceof Error ? err.message : "Prediction failed");
     } finally {
