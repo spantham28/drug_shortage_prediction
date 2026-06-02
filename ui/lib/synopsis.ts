@@ -32,6 +32,11 @@ export const modelSynopsis = {
         detail:
           "16 classifiers tuned with RandomizedSearchCV (3-fold stratified CV, accuracy scoring). Top 3 models — ExtraTrees, RandomForest, GradientBoosting — combined into EnsembleTop3 via soft probability averaging at threshold 0.5.",
       },
+      {
+        step: "Feature importance",
+        detail:
+          "Permutation importance computed on the held-out test set for EnsembleTop3 (shortage_prediction_best_feature_importance.csv). Native tree importances are not available for the soft-vote ensemble.",
+      },
     ],
     results: [
       { metric: "Best model", value: "EnsembleTop3" },
@@ -40,8 +45,46 @@ export const modelSynopsis = {
       { metric: "Precision", value: "63.03%" },
       { metric: "Recall (sensitivity)", value: "78.51%" },
       { metric: "F1 score", value: "69.92%" },
-      { metric: "Specificity", value: "92.1%" },
+      { metric: "Specificity", value: "92.07%" },
     ],
+    featureImportance: [
+      {
+        feature: "avg_nadac",
+        label: "Drug Acquisition Cost (avg NADAC)",
+        permutationImportance: 0.2299,
+        permutationStd: 0.0083,
+        rank: 1,
+      },
+      {
+        feature: "num_forms",
+        label: "Number of Dosage Forms",
+        permutationImportance: 0.1911,
+        permutationStd: 0.0083,
+        rank: 2,
+      },
+      {
+        feature: "ingredient_num",
+        label: "Number of Ingredients",
+        permutationImportance: 0.1282,
+        permutationStd: 0.0089,
+        rank: 3,
+      },
+      {
+        feature: "manufacturer_num",
+        label: "Number of Manufacturers",
+        permutationImportance: 0.0981,
+        permutationStd: 0.0061,
+        rank: 4,
+      },
+      {
+        feature: "liquid_flag",
+        label: "Injectable / Liquid Form",
+        permutationImportance: 0.0838,
+        permutationStd: 0.0079,
+        rank: 5,
+      },
+    ],
+    featureImportanceSource: "shortage_prediction_best_feature_importance.csv",
   },
   income: {
     title: "Hospital Net Income Regression Model",

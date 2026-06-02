@@ -149,7 +149,7 @@ export default function Dashboard() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400">
             Predict generic drug shortages from pricing signals and estimate hospital net income
-            from operational data — powered by ensemble classification and gradient boosting models.
+            from operational data — powered by ensemble classification and random forest regression.
           </p>
         </div>
       </header>
@@ -443,7 +443,54 @@ export default function Dashboard() {
                 ))}
               </div>
 
-              <h3 className="mb-4 mt-8 text-xs font-semibold uppercase tracking-widest text-teal-400">
+              <h3 className="mb-3 mt-8 text-xs font-semibold uppercase tracking-widest text-teal-400">
+                Feature Importance (EnsembleTop3)
+              </h3>
+              <p className="mb-3 text-xs text-slate-500">
+                Permutation importance on the test set · source:{" "}
+                {modelSynopsis.shortage.featureImportanceSource}
+              </p>
+              <div className="mb-6 overflow-hidden rounded-xl border border-white/10">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="border-b border-white/10 bg-white/5 text-left text-slate-500">
+                      <th className="px-3 py-2 font-medium">Rank</th>
+                      <th className="px-3 py-2 font-medium">Feature</th>
+                      <th className="px-3 py-2 font-medium">Importance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {modelSynopsis.shortage.featureImportance.map((row) => {
+                      const maxImp = modelSynopsis.shortage.featureImportance[0].permutationImportance;
+                      const barPct = (row.permutationImportance / maxImp) * 100;
+                      return (
+                        <tr key={row.feature} className="border-b border-white/5 last:border-0">
+                          <td className="px-3 py-2 font-mono text-slate-500">{row.rank}</td>
+                          <td className="px-3 py-2 text-slate-300">{row.label}</td>
+                          <td className="px-3 py-2">
+                            <div className="flex items-center gap-2">
+                              <div className="h-1.5 min-w-[80px] flex-1 overflow-hidden rounded-full bg-white/10">
+                                <div
+                                  className="h-full rounded-full bg-gradient-to-r from-coral-500 to-teal-500"
+                                  style={{ width: `${barPct}%` }}
+                                />
+                              </div>
+                              <span className="shrink-0 font-mono text-teal-400">
+                                {row.permutationImportance.toFixed(3)}
+                              </span>
+                            </div>
+                            <p className="mt-0.5 text-[10px] text-slate-600">
+                              ± {row.permutationStd.toFixed(4)}
+                            </p>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-teal-400">
                 Results
               </h3>
               <div className="grid grid-cols-2 gap-2">
