@@ -33,13 +33,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-> **Note:** Python API routes (`/api/shortage`, `/api/income`) run as Vercel serverless functions locally via `vercel dev`, or deploy to Vercel for full stack testing. During `next dev`, API calls to `/api/*` require Vercel CLI:
+> **Important:** Predictions require Python serverless functions. Use `vercel dev` (not plain `next dev`) so `/api/shortage` and `/api/income` work locally:
 
 ```bash
 npm i -g vercel
 cd ui
 vercel dev
 ```
+
+Next.js route handlers at `/api/shortage` and `/api/income` proxy to Python at `/api/py-shortage` and `/api/py-income`.
 
 ## Deploy to Vercel
 

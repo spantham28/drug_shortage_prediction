@@ -1,14 +1,11 @@
 from http.server import BaseHTTPRequestHandler
 import json
-import traceback
-
-import json
 import sys
 import traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "lib"))
-from inference import get_income_feature_schema, predict_income, predict_shortage
+from inference import get_income_feature_schema, predict_income
 
 
 class handler(BaseHTTPRequestHandler):
@@ -29,10 +26,7 @@ class handler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         try:
-            if self.path.endswith("/features"):
-                self._send_json(200, get_income_feature_schema())
-            else:
-                self._send_json(200, {"status": "ok", "endpoint": "shortage"})
+            self._send_json(200, get_income_feature_schema())
         except Exception as exc:
             self._send_json(500, {"error": str(exc), "trace": traceback.format_exc()})
 
@@ -41,7 +35,7 @@ class handler(BaseHTTPRequestHandler):
             length = int(self.headers.get("Content-Length", 0))
             raw = self.rfile.read(length).decode("utf-8") if length else "{}"
             payload = json.loads(raw) if raw else {}
-            result = predict_shortage(payload)
+            result = predict_income(payload)
             self._send_json(200, result)
         except ValueError as exc:
             self._send_json(400, {"error": str(exc)})
