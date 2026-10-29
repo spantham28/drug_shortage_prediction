@@ -1,0 +1,35 @@
+horizon,task,feature_set,model,n,MAE_pp,RMSE_pp,R2,MAE_est,R2_est,events,AUROC,AUPRC,Brier,AUROC_est,cal_intercept,cal_slope
+1,regression,A: financial/operating history,Reference: persistence (last year's margin),1646,6.92 (6.37 to 7.50),11.46 (10.10 to 12.92),0.652 (0.561 to 0.725),6.916397504165255,0.6524384161459303,,,,,,,
+1,regression,A: financial/operating history,Penalized linear,1646,6.70 (6.24 to 7.20),10.62 (9.59 to 11.74),0.702 (0.644 to 0.752),6.7030538436435005,0.7017495780867453,,,,,,,
+1,regression,A: financial/operating history,Gradient-boosted trees,1646,6.65 (6.16 to 7.15),10.62 (9.58 to 11.68),0.702 (0.648 to 0.748),6.647266384749131,0.7015475985210211,,,,,,,
+1,regression,A: financial/operating history,Neural network (MLP),1646,6.92 (6.46 to 7.42),10.86 (9.86 to 11.87),0.688 (0.634 to 0.736),6.924024620304957,0.6880330410807085,,,,,,,
+1,regression,B: + shortage exposure known at forecast,Penalized linear,1646,7.28 (6.80 to 7.77),11.20 (10.17 to 12.28),0.668 (0.611 to 0.714),7.277134017614412,0.6679914707554863,,,,,,,
+1,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,1646,7.20 (6.71 to 7.73),11.23 (10.16 to 12.30),0.667 (0.616 to 0.712),7.196095365323774,0.6666857832396073,,,,,,,
+1,regression,B: + shortage exposure known at forecast,Neural network (MLP),1646,7.71 (7.21 to 8.20),11.68 (10.66 to 12.74),0.639 (0.580 to 0.693),7.7092631433566945,0.6391297147856199,,,,,,,
+1,regression,C: + realized target-year exposure (oracle),Penalized linear,1646,7.15 (6.67 to 7.64),11.05 (10.03 to 12.10),0.677 (0.620 to 0.723),7.149811454893573,0.6771356415372848,,,,,,,
+1,regression,C: + realized target-year exposure (oracle),Gradient-boosted trees,1646,7.21 (6.71 to 7.75),11.25 (10.19 to 12.32),0.665 (0.613 to 0.710),7.2096352563130806,0.6651546069293268,,,,,,,
+1,regression,C: + realized target-year exposure (oracle),Neural network (MLP),1646,8.08 (7.57 to 8.60),12.03 (11.01 to 13.05),0.618 (0.555 to 0.673),8.076629597454032,0.6175491204675347,,,,,,,
+1,classification,A: financial/operating history,Reference: persistence (last year's margin),1646,,,,,,939.0,0.928 (0.913 to 0.943),0.928 (0.907 to 0.947),0.1053 (0.0952 to 0.1158),0.9284697524978422,0.05388799137526318,1.1281884887359552
+1,classification,A: financial/operating history,Penalized linear,1646,,,,,,939.0,0.930 (0.915 to 0.944),0.930 (0.909 to 0.948),0.1020 (0.0912 to 0.1126),0.9300348108749716,0.0814145506736845,1.0329829219080344
+1,classification,A: financial/operating history,Gradient-boosted trees,1646,,,,,,939.0,0.931 (0.916 to 0.945),0.940 (0.925 to 0.954),0.1006 (0.0888 to 0.1122),0.9309190161371226,-0.016147124975180067,1.1030921901833377
+1,classification,A: financial/operating history,Neural network (MLP),1646,,,,,,939.0,0.921 (0.904 to 0.936),0.926 (0.905 to 0.945),0.1091 (0.0970 to 0.1212),0.9208267243885502,0.1397702481412543,0.914247258486464
+1,classification,B: + shortage exposure known at forecast,Penalized linear,1646,,,,,,939.0,0.927 (0.912 to 0.942),0.928 (0.907 to 0.946),0.1043 (0.0933 to 0.1150),0.9273942455861287,0.13990904566328172,0.9999859645900409
+1,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,1646,,,,,,939.0,0.926 (0.911 to 0.941),0.937 (0.921 to 0.951),0.1081 (0.0957 to 0.1196),0.9255294310809448,0.3645269544292109,1.0508791012678893
+1,classification,B: + shortage exposure known at forecast,Neural network (MLP),1646,,,,,,939.0,0.901 (0.881 to 0.919),0.908 (0.885 to 0.930),0.1403 (0.1259 to 0.1553),0.9005773694667504,0.9149959227790446,0.7236673825655113
+1,classification,C: + realized target-year exposure (oracle),Penalized linear,1646,,,,,,939.0,0.927 (0.912 to 0.942),0.928 (0.907 to 0.946),0.1044 (0.0934 to 0.1151),0.9273565877810968,0.14477828156959152,0.9997848615289776
+1,classification,C: + realized target-year exposure (oracle),Gradient-boosted trees,1646,,,,,,939.0,0.926 (0.911 to 0.941),0.936 (0.921 to 0.951),0.1083 (0.0963 to 0.1200),0.9258954649458555,0.3943784904657781,1.048832135696821
+1,classification,C: + realized target-year exposure (oracle),Neural network (MLP),1646,,,,,,939.0,0.906 (0.888 to 0.923),0.912 (0.890 to 0.932),0.1268 (0.1143 to 0.1393),0.9062200149727433,0.606741176864677,0.8149109110647921
+2,regression,A: financial/operating history,Reference: persistence (last year's margin),1641,8.45 (7.86 to 9.08),13.14 (11.96 to 14.42),0.536 (0.436 to 0.614),8.447730691162915,0.5357361974452253,,,,,,,
+2,regression,A: financial/operating history,Penalized linear,1641,8.20 (7.66 to 8.80),12.32 (11.29 to 13.48),0.592 (0.510 to 0.653),8.203729993612987,0.5918735259493814,,,,,,,
+2,regression,A: financial/operating history,Gradient-boosted trees,1641,8.14 (7.60 to 8.71),12.14 (11.16 to 13.15),0.604 (0.540 to 0.654),8.144124673682436,0.604060601457224,,,,,,,
+2,regression,A: financial/operating history,Neural network (MLP),1641,8.65 (8.11 to 9.23),12.93 (11.86 to 13.99),0.551 (0.473 to 0.610),8.645863990550918,0.5507470820074621,,,,,,,
+2,regression,B: + shortage exposure known at forecast,Penalized linear,1641,9.06 (8.52 to 9.63),12.82 (11.81 to 13.88),0.558 (0.480 to 0.616),9.062633711130252,0.5580826400480126,,,,,,,
+2,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,1641,9.53 (9.02 to 10.08),13.28 (12.36 to 14.28),0.526 (0.443 to 0.590),9.528066185316913,0.5259742808694992,,,,,,,
+2,regression,B: + shortage exposure known at forecast,Neural network (MLP),1641,9.38 (8.82 to 9.99),13.50 (12.42 to 14.69),0.510 (0.409 to 0.586),9.377844464531977,0.5104599468875809,,,,,,,
+2,classification,A: financial/operating history,Reference: persistence (last year's margin),1641,,,,,,931.0,0.889 (0.869 to 0.909),0.890 (0.860 to 0.917),0.1322 (0.1204 to 0.1442),0.8890561413594349,-0.20426286199554694,0.9910825436679002
+2,classification,A: financial/operating history,Penalized linear,1641,,,,,,931.0,0.893 (0.873 to 0.913),0.894 (0.865 to 0.921),0.1317 (0.1205 to 0.1430),0.8929940545528813,0.02016780583904925,1.2227669047522463
+2,classification,A: financial/operating history,Gradient-boosted trees,1641,,,,,,931.0,0.897 (0.877 to 0.915),0.905 (0.881 to 0.927),0.1279 (0.1160 to 0.1403),0.8966831061557313,-0.1677599942714671,1.2989738191513989
+2,classification,A: financial/operating history,Neural network (MLP),1641,,,,,,931.0,0.882 (0.861 to 0.903),0.884 (0.851 to 0.911),0.1347 (0.1212 to 0.1477),0.8821924025355138,0.06904509579660789,0.8596182202380838
+2,classification,B: + shortage exposure known at forecast,Penalized linear,1641,,,,,,931.0,0.892 (0.871 to 0.912),0.894 (0.863 to 0.920),0.1326 (0.1216 to 0.1443),0.8917036050891818,-0.1349714248681222,1.2015825847898158
+2,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,1641,,,,,,931.0,0.895 (0.876 to 0.914),0.906 (0.882 to 0.928),0.1362 (0.1221 to 0.1506),0.8950681532805859,-0.5684793558874343,1.1948393427118245
+2,classification,B: + shortage exposure known at forecast,Neural network (MLP),1641,,,,,,931.0,0.857 (0.832 to 0.880),0.861 (0.828 to 0.890),0.1687 (0.1503 to 0.1862),0.8566769035264216,-1.1766738291488301,0.7063234991268706

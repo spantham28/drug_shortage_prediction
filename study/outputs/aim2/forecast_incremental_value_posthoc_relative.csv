@@ -1,0 +1,13 @@
+horizon,task,model,comparison,metric,delta,ci_lo,ci_hi
+1,regression,Penalized linear,B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.09689678045208527,0.05391014514541155,0.1429717999008034
+1,regression,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in MAE (pp),-0.007674260046958814,-0.036362733924628965,0.0189436779711009
+1,regression,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.23193488349528568,0.06577535896653744,0.3968214734272889
+1,classification,Penalized linear,B-rel: + hospital-relative exposure vs A,change in AUROC,-0.00023347839119836067,-0.0005474852997920082,5.81235875564023e-05
+1,classification,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in AUROC,0.0011628730193877779,-0.00030272850933608095,0.0025752384830941112
+1,classification,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in AUROC,-0.0021028118329861067,-0.007160866590459974,0.0029295950642630173
+2,regression,Penalized linear,B-rel: + hospital-relative exposure vs A,change in MAE (pp),-0.005832677210399595,-0.035247250528679386,0.02257990317752244
+2,regression,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.09328386837409575,0.02898372964142255,0.15445222796456748
+2,regression,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.11728122667427066,-0.1686876470751726,0.3924125171949474
+2,classification,Penalized linear,B-rel: + hospital-relative exposure vs A,change in AUROC,1.5128364169170183e-06,-1.7030519344696237e-05,2.1740541202780462e-05
+2,classification,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in AUROC,0.0020809064915811026,0.0007400462773369864,0.0033699904587353863
+2,classification,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in AUROC,-0.006307015022465667,-0.014092919440975894,0.0013552911647091378

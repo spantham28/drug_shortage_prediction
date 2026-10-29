@@ -1,0 +1,9 @@
+test_set,model,n,events,AUROC,AUPRC,Brier,cal_intercept,cal_slope,top5pct_sensitivity,top5pct_ppv,top5pct_lift
+"Held-out ingredients, 2022-2025",Penalized linear,23884,249,0.711 (0.598 to 0.803),0.021 (0.010 to 0.039),0.0105 (0.0049 to 0.0209),-0.85,1.32,7.2,1.5,1.44
+"Held-out ingredients, 2022-2025",Gradient-boosted trees,23884,249,0.644 (0.505 to 0.775),0.021 (0.008 to 0.050),0.0105 (0.0047 to 0.0212),0.79,0.26,12.9,2.7,2.57
+"Held-out ingredients, 2022-2025",Neural network (MLP),23884,249,0.656 (0.547 to 0.753),0.032 (0.009 to 0.089),0.0120 (0.0060 to 0.0235),0.61,0.16,16.1,3.3,3.21
+"Held-out ingredients, 2022-2025",Reference: shortage history only,23884,249,0.497 (0.440 to 0.559),0.011 (0.005 to 0.022),0.0103 (0.0045 to 0.0211),0.37,-0.24,93.6,1.0,0.95
+"All ingredients, 2022-2025",Penalized linear,118762,1260,0.729 (0.685 to 0.771),0.028 (0.018 to 0.044),0.0106 (0.0074 to 0.0154),-0.87,1.67,18.7,4.0,3.75
+"All ingredients, 2022-2025",Gradient-boosted trees,118762,1260,0.635 (0.578 to 0.698),0.021 (0.013 to 0.032),0.0108 (0.0074 to 0.0158),0.41,0.26,13.7,2.9,2.73
+"All ingredients, 2022-2025",Neural network (MLP),118762,1260,0.614 (0.567 to 0.665),0.023 (0.013 to 0.042),0.0137 (0.0101 to 0.0191),0.24,0.12,13.4,2.8,2.68
+"All ingredients, 2022-2025",Reference: shortage history only,118762,1260,0.485 (0.425 to 0.543),0.011 (0.008 to 0.016),0.0105 (0.0071 to 0.0155),0.36,0.29,8.7,1.8,1.73

@@ -1,0 +1,9 @@
+analysis,design,metric,mean,sd,n
+Original shortage model (ExtraTrees),Random split of drug-windows (original),AUROC,0.8468647355576909,0.017368638411005385,
+Original shortage model (ExtraTrees),Split by drug (no drug in both sets),AUROC,0.5297670426118782,0.03893801034374956,
+Original shortage model,Share of drugs uniquely identified by the 4 market-structure features,share,0.6142857142857143,,
+"Original profit model (RandomForest, same-year predictors)",Random split of hospital-years (original),R2,0.46527758345064296,0.18783426615403936,
+"Original profit model (RandomForest, same-year predictors)",Split by hospital,R2,0.23420406110306766,0.1922725733282112,
+Original profit model (RandomForest),"Prior-year predictors, split by hospital",R2,0.11435756043703105,0.31296462860966706,1443.0
+Original profit data,Hospitals with >1 year (share of rows),share,0.9018525817895152,,
+Original profit data,Distinct shortage_num values across all hospital-years,count,58.0,,

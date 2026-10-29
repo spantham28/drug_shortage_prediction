@@ -15,9 +15,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Building Models to Tackle Generic Drug Shortages in the US",
+  title: "Generic Drug Shortages: Early Warning and Hospital Costs",
   description:
-    "Interactive predictions for generic drug shortages and hospital net income using machine learning models trained on NADAC pricing and CMS hospital cost report data.",
+    "Shortage risk for generic drugs and shortage exposure, drug expense, and margin forecasts for US hospitals, from public NADAC, ASHP, and CMS cost report data.",
 };
 
 export default function RootLayout({

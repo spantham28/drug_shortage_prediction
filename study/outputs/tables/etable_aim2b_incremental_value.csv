@@ -1,0 +1,31 @@
+horizon,task,model,comparison,metric,delta,ci_lo,ci_hi
+1,classification,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in AUROC,0.0011628730193877,-0.000302728509336,0.0025752384830941
+1,classification,Gradient-boosted trees,B: + shortage exposure known at forecast vs A,change in AUROC,-0.0053895850561778,-0.0084202941510273,-0.002315508775368
+1,classification,Gradient-boosted trees,C: + realized target-year exposure (oracle) vs A,change in AUROC,-0.005023551191267,-0.0079331513055627,-0.002447475462292
+1,classification,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in AUROC,-0.0021028118329861,-0.0071608665904599,0.002929595064263
+1,classification,Neural network (MLP),B: + shortage exposure known at forecast vs A,change in AUROC,-0.0202493549217998,-0.0272265180493578,-0.0132475980004779
+1,classification,Neural network (MLP),C: + realized target-year exposure (oracle) vs A,change in AUROC,-0.0146067094158068,-0.0219162051914619,-0.0082907057696543
+1,classification,Penalized linear,B-rel: + hospital-relative exposure vs A,change in AUROC,-0.0002334783911983,-0.000547485299792,5.81235875564023e-05
+1,classification,Penalized linear,B: + shortage exposure known at forecast vs A,change in AUROC,-0.0026405652888429,-0.0037030630111285,-0.0017269721404662
+1,classification,Penalized linear,C: + realized target-year exposure (oracle) vs A,change in AUROC,-0.0026782230938748,-0.0037748125125151,-0.0017554852080711
+2,classification,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in AUROC,0.0020809064915811,0.0007400462773369,0.0033699904587353
+2,classification,Gradient-boosted trees,B: + shortage exposure known at forecast vs A,change in AUROC,-0.0016149528751454,-0.0073818657024975,0.0042464130076143
+2,classification,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in AUROC,-0.0063070150224656,-0.0140929194409758,0.0013552911647091
+2,classification,Neural network (MLP),B: + shortage exposure known at forecast vs A,change in AUROC,-0.0255154990090922,-0.0372261887504521,-0.0134848707160627
+2,classification,Penalized linear,B-rel: + hospital-relative exposure vs A,change in AUROC,1.5128364169170183e-06,-1.7030519344696237e-05,2.1740541202780465e-05
+2,classification,Penalized linear,B: + shortage exposure known at forecast vs A,change in AUROC,-0.0012904494636994,-0.0023451076336684,-0.0002700268330392
+1,regression,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in MAE (pp),-0.0076742600469588,-0.0363627339246289,0.0189436779711009
+1,regression,Gradient-boosted trees,B: + shortage exposure known at forecast vs A,change in MAE (pp),0.5488289805746422,0.3916252319605924,0.7189917666978874
+1,regression,Gradient-boosted trees,C: + realized target-year exposure (oracle) vs A,change in MAE (pp),0.5623688715639492,0.4021557754823174,0.7312957681873148
+1,regression,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.2319348834952856,0.0657753589665374,0.3968214734272889
+1,regression,Neural network (MLP),B: + shortage exposure known at forecast vs A,change in MAE (pp),0.7852385230517376,0.5866757825442901,0.9797066844285056
+1,regression,Neural network (MLP),C: + realized target-year exposure (oracle) vs A,change in MAE (pp),1.1526049771490747,0.9041456996717,1.3846056146032586
+1,regression,Penalized linear,B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.0968967804520852,0.0539101451454115,0.1429717999008034
+1,regression,Penalized linear,B: + shortage exposure known at forecast vs A,change in MAE (pp),0.5740801739709118,0.4105000519748306,0.7423245658450273
+1,regression,Penalized linear,C: + realized target-year exposure (oracle) vs A,change in MAE (pp),0.4467576112500726,0.3173271784891789,0.5816063326916157
+2,regression,Gradient-boosted trees,B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.0932838683740957,0.0289837296414225,0.1544522279645674
+2,regression,Gradient-boosted trees,B: + shortage exposure known at forecast vs A,change in MAE (pp),1.383941511634477,1.119588303354703,1.6187157595668242
+2,regression,Neural network (MLP),B-rel: + hospital-relative exposure vs A,change in MAE (pp),0.1172812266742706,-0.1686876470751726,0.3924125171949474
+2,regression,Neural network (MLP),B: + shortage exposure known at forecast vs A,change in MAE (pp),0.7319804739810589,0.3990159856581728,1.0625467620086335
+2,regression,Penalized linear,B-rel: + hospital-relative exposure vs A,change in MAE (pp),-0.0058326772103995,-0.0352472505286793,0.0225799031775224
+2,regression,Penalized linear,B: + shortage exposure known at forecast vs A,change in MAE (pp),0.8589037175172649,0.6676447891142768,1.058696953553934

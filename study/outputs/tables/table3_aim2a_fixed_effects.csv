@@ -1,0 +1,49 @@
+outcome,specification,term,estimate (95% CI),p,n_obs,n_hospitals
+log_drug_cost_per_apd,Main: service-weighted exposure,exposure,0.0021 (0.0015 to 0.0028),<.001,24815,3025
+log_drug_cost_per_apd,Unweighted shortage-years,exposure_unweighted,0.0277 (-0.0691 to 0.1246),0.575,24815,3025
+log_drug_cost_per_apd,Original measure: count of active shortages,shortage_count_any,0.0192 (-0.0700 to 0.1084),0.673,24815,3025
+log_drug_cost_per_apd,Parenteral shortages only,exposure_parenteral,0.0014 (0.0006 to 0.0023),0.001,24815,3025
+log_drug_cost_per_apd,Limited-supply shortages only,exposure_limited_supply,0.0058 (0.0040 to 0.0076),<.001,24815,3025
+log_drug_cost_per_apd,Exposure x baseline drug intensity,exposure_drug_intensity,0.0001 (-0.0002 to 0.0004),0.563,24815,3025
+log_drug_cost_per_apd,Category-specific baseline-share trends,exposure,0.0008 (0.0003 to 0.0013),0.002,24815,3025
+log_drug_cost_per_apd,Excluding FY2020-2021,exposure,0.0025 (0.0017 to 0.0033),<.001,19279,3017
+log_drug_cost_per_apd,Excluding FY2016,exposure,0.0019 (0.0013 to 0.0026),<.001,21887,2972
+log_drug_cost_per_apd,Hospital-specific linear trends,exposure,0.0007 (0.0001 to 0.0012),0.014,24675,2955
+log_drug_cost_per_apd,Falsification: adds next-year exposure,exposure,0.0014 (0.0008 to 0.0019),<.001,24029,2975
+log_drug_cost_per_apd,Falsification: adds next-year exposure,exposure_lead,0.0012 (0.0007 to 0.0017),<.001,24029,2975
+drug_cost_per_apd,Main: service-weighted exposure,exposure,0.3855 (0.2166 to 0.5545),<.001,25130,3053
+drug_cost_per_apd,Unweighted shortage-years,exposure_unweighted,7.1518 (-10.7471 to 25.0507),0.434,25130,3053
+drug_cost_per_apd,Original measure: count of active shortages,shortage_count_any,8.5282 (-6.3306 to 23.3870),0.261,25130,3053
+drug_cost_per_apd,Parenteral shortages only,exposure_parenteral,0.4767 (0.2182 to 0.7352),<.001,25130,3053
+drug_cost_per_apd,Limited-supply shortages only,exposure_limited_supply,1.0744 (0.6223 to 1.5265),<.001,25130,3053
+drug_cost_per_apd,Exposure x baseline drug intensity,exposure_drug_intensity,0.1998 (0.0755 to 0.3241),0.002,25130,3053
+drug_cost_per_apd,Category-specific baseline-share trends,exposure,0.0731 (-0.0521 to 0.1983),0.252,25130,3053
+drug_cost_per_apd,Excluding FY2020-2021,exposure,0.5028 (0.2818 to 0.7238),<.001,19539,3047
+drug_cost_per_apd,Excluding FY2016,exposure,0.3668 (0.1974 to 0.5363),<.001,22149,3000
+drug_cost_per_apd,Hospital-specific linear trends,exposure,0.0308 (-0.1026 to 0.1641),0.651,24998,2987
+drug_cost_per_apd,Falsification: adds next-year exposure,exposure,0.2535 (0.1113 to 0.3958),<.001,24337,3005
+drug_cost_per_apd,Falsification: adds next-year exposure,exposure_lead,0.2006 (0.0753 to 0.3259),0.002,24337,3005
+log_drug_expense,Main: service-weighted exposure,exposure,0.0019 (0.0012 to 0.0026),<.001,24815,3025
+log_drug_expense,Unweighted shortage-years,exposure_unweighted,0.0294 (-0.0689 to 0.1278),0.557,24815,3025
+log_drug_expense,Original measure: count of active shortages,shortage_count_any,0.0178 (-0.0750 to 0.1105),0.707,24815,3025
+log_drug_expense,Parenteral shortages only,exposure_parenteral,0.0011 (0.0002 to 0.0020),0.020,24815,3025
+log_drug_expense,Limited-supply shortages only,exposure_limited_supply,0.0053 (0.0034 to 0.0071),<.001,24815,3025
+log_drug_expense,Exposure x baseline drug intensity,exposure_drug_intensity,-0.0001 (-0.0005 to 0.0002),0.469,24815,3025
+log_drug_expense,Category-specific baseline-share trends,exposure,0.0007 (0.0002 to 0.0013),0.008,24815,3025
+log_drug_expense,Excluding FY2020-2021,exposure,0.0023 (0.0014 to 0.0031),<.001,19279,3017
+log_drug_expense,Excluding FY2016,exposure,0.0017 (0.0010 to 0.0024),<.001,21887,2972
+log_drug_expense,Hospital-specific linear trends,exposure,0.0006 (0.0001 to 0.0012),0.030,24675,2955
+log_drug_expense,Falsification: adds next-year exposure,exposure,0.0013 (0.0007 to 0.0019),<.001,24029,2975
+log_drug_expense,Falsification: adds next-year exposure,exposure_lead,0.0010 (0.0005 to 0.0015),<.001,24029,2975
+operating_margin_pp,Main: service-weighted exposure,exposure,0.0049 (-0.0164 to 0.0261),0.654,25130,3053
+operating_margin_pp,Unweighted shortage-years,exposure_unweighted,11.0956 (6.3419 to 15.8492),<.001,25130,3053
+operating_margin_pp,Original measure: count of active shortages,shortage_count_any,0.7568 (-3.3238 to 4.8373),0.716,25130,3053
+operating_margin_pp,Parenteral shortages only,exposure_parenteral,0.0085 (-0.0157 to 0.0327),0.492,25130,3053
+operating_margin_pp,Limited-supply shortages only,exposure_limited_supply,0.0165 (-0.0455 to 0.0784),0.602,25130,3053
+operating_margin_pp,Exposure x baseline drug intensity,exposure_drug_intensity,-0.0079 (-0.0158 to 0.0000),0.050,25130,3053
+operating_margin_pp,Category-specific baseline-share trends,exposure,0.0284 (0.0068 to 0.0501),0.010,25130,3053
+operating_margin_pp,Excluding FY2020-2021,exposure,-0.0065 (-0.0317 to 0.0186),0.611,19539,3047
+operating_margin_pp,Excluding FY2016,exposure,0.0049 (-0.0156 to 0.0254),0.642,22149,3000
+operating_margin_pp,Hospital-specific linear trends,exposure,0.0314 (0.0087 to 0.0541),0.007,24998,2987
+operating_margin_pp,Falsification: adds next-year exposure,exposure,0.0332 (0.0102 to 0.0561),0.005,24337,3005
+operating_margin_pp,Falsification: adds next-year exposure,exposure_lead,-0.0423 (-0.0660 to -0.0186),<.001,24337,3005

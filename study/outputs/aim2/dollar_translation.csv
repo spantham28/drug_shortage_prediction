@@ -1,0 +1,11 @@
+,value
+pct_per_unit,0.0019050445489978696
+pct_ci,0.00122532;0.00258523
+usd_per_unit_at_mean,46187.27276591141
+usd_ci_at_mean,29707.6;62678.1
+usd_per_unit_at_median,18667.35246144252
+mean_drug_expense,24244720.571079444
+median_drug_expense,9798906.0
+exposure_sd_between,27.247789234115327
+exposure_sd_within,39.3143610598777
+exposure_iqr,64.2786237141039

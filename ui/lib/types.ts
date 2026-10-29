@@ -1,76 +1,73 @@
-export type TabId = "shortage" | "income" | "synopsis";
+export type TabId = "shortage" | "hospital" | "methods";
 
-export interface ShortageResult {
-  shortage_flag: number;
-  shortage_probability_pct: number;
-  shortage_label: string;
-  model_type: string;
-  ensemble_members: string[];
+export interface ShortageFeature {
+  key: string;
+  label: string;
+  editable: boolean;
+  slog: boolean;
+  median: number;
+  mean: number;
+  scale: number;
+  coef: number;
 }
 
-export interface IncomeResult {
-  net_income: number;
-  net_income_formatted: string;
-  model_name: string;
-  target: string;
+export interface ShortageProduct {
+  market: string;
+  ingredient: string;
+  risk: number;
+  price: number;
+  unit: string;
+  x: Record<string, number | null>;
+  drivers: string[];
 }
 
-export interface FeatureConfig {
+export interface ShortageData {
+  asOf: string;
+  horizonMonths: number;
+  baseRate: number;
+  intercept: number;
+  features: ShortageFeature[];
+  products: ShortageProduct[];
+  currentShortages: string[];
+  validation: Record<string, { auroc: string; top5Sensitivity: number; top5Lift: number }>;
+}
+
+export interface Hospital {
+  ccn: string;
   name: string;
-  transform: string;
-  median?: number;
-  offset?: number;
-  type?: string;
-  options?: string[];
+  city: string;
+  state: string;
+  beds: number;
+  ownership: string;
+  teaching: number;
+  rural: number;
+  system: number;
+  exposure: Record<string, number>;
+  exposureYear: number;
+  exposureVsNational: number;
+  exposurePercentile: number;
+  drugExpense: number | null;
+  drugExpenseVsAverage: number | null;
+  margin: Record<string, number>;
+  forecastYear: number;
+  forecastMargin: number;
+  lossProbability: number;
 }
 
-export interface IncomeFeatureSchema {
-  features: FeatureConfig[];
-  model_name: string;
-  target: string;
+export interface HospitalData {
+  years: number[];
+  nationalExposure: Record<string, number>;
+  betaLogPerUnit: number;
+  betaCi: [number, number];
+  validation: { marginMAE: string; marginR2: string; lossAUROC: string };
+  hospitals: Hospital[];
 }
 
-export const SHORTAGE_FIELDS = [
-  {
-    key: "avg_nadac",
-    label: "Drug Acquisition Cost (avg NADAC)",
-    hint: "Average NADAC per-unit acquisition price in dollars",
-    type: "number" as const,
-    step: "0.01",
-    placeholder: "e.g. 12.50",
-  },
-  {
-    key: "manufacturer_num",
-    label: "Number of Manufacturers",
-    hint: "Count of active generic manufacturers",
-    type: "number" as const,
-    step: "1",
-    placeholder: "e.g. 3",
-  },
-  {
-    key: "ingredient_num",
-    label: "Number of Ingredients",
-    hint: "Active pharmaceutical ingredients in the product",
-    type: "number" as const,
-    step: "1",
-    placeholder: "e.g. 1",
-  },
-  {
-    key: "num_forms",
-    label: "Number of Dosage Forms",
-    hint: "Distinct dosage forms available (tablet, capsule, etc.)",
-    type: "number" as const,
-    step: "1",
-    placeholder: "e.g. 2",
-  },
-  {
-    key: "liquid_flag",
-    label: "Formulation Type",
-    hint: "Injectable/liquid products use liquid_flag = 1; solids use 0",
-    type: "select" as const,
-    options: [
-      { value: "1", label: "Injectable / Liquid (liquid_flag = 1)" },
-      { value: "0", label: "Solid (liquid_flag = 0)" },
-    ],
-  },
-];
+export interface ValidationData {
+  leakage: { analysis: string; design: string; metric: string; mean: number }[];
+  aim1: { test_set: string; model: string; events: number; AUROC: string; AUPRC: string; top5pct_sensitivity: number; top5pct_lift: number }[];
+  aim2a: { outcome: string; specification: string; coef: number; ci_lo: number; ci_hi: number; identifying_variation_share: number }[];
+  aim2b: { horizon: number; task: string; feature_set: string; model: string; MAE_pp: string; R2: string; AUROC: string }[];
+  aim2bIncremental: { horizon: number; task: string; model: string; comparison: string; metric: string; delta: number; ci_lo: number; ci_hi: number }[];
+  headline: Record<string, string>;
+}
