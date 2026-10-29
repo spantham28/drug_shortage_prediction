@@ -36,6 +36,7 @@ def main():
         r = p[(p.test_set.str.startswith("All")) & (p.model == model)].iloc[0]
         est, full = ci_text(r.AUROC)
         n[key] = f"AUROC, {est} [95% CI, {full.split('95% CI, ')[1][:-1]}]"
+        n[key.replace("_all", "_auc")] = est
     n["a1_top5_sens"] = f"{100 * a.top5pct_sensitivity:.0f}"
     n["a1_top5_lift"] = f"{a.top5pct_lift:.1f}"
     n["a1_top5_ppv"] = f"{100 * a.top5pct_ppv:.1f}"
@@ -98,36 +99,20 @@ def main():
     mae_rng = reg[(reg.horizon == 1) & ~reg.model.str.startswith("Reference")]["MAE_est"]
     ci = lambda s: ci_text(s)[1]
     n["res_2b_1"] = (
-        f"Using financial and operating history alone (set A), next-year operating margin in held-out hospitals "
-        f"was forecast by {best1.model.lower()} with an MAE of {ci_text(best1.MAE_pp)[0]} percentage points "
-        f"({ci(best1.MAE_pp)[len(ci_text(best1.MAE_pp)[0]) + 2:-1]}) and an R² of {float(best1.R2.split()[0]):.2f}, "
-        f"compared with {ci_text(pers1.MAE_pp)[0]} percentage points and {float(pers1.R2.split()[0]):.2f} for the persistence "
-        f"forecast (all 3 model classes, MAE {mae_rng.min():.2f}-{mae_rng.max():.2f}). An operating loss "
-        f"the next year was predicted with an AUROC of {ci(cbest1.AUROC)} by {cbest1.model.lower()}, similar to the "
-        f"persistence reference ({ci_text(cpers1.AUROC)[0]}). At 2 years, the MAE was {ci_text(best2.MAE_pp)[0]} vs {ci_text(pers2.MAE_pp)[0]} for persistence "
-        f"(eTable 6 in Supplement 1).")
-    i1 = inc[(inc.horizon == 1) & inc.comparison.str.startswith("B")]
-    r1 = i1[i1.task == "regression"]
-    c1 = i1[i1.task == "classification"]
+        f"Using financial and operating history alone, next-year operating margin in held-out hospitals was forecast with "
+        f"an MAE of {ci(best1.MAE_pp).replace(' (', ' percentage points (', 1)}, modestly better than assuming the prior "
+        f"year's margin would persist ({ci_text(pers1.MAE_pp)[0]} percentage points), and an operating loss was predicted "
+        f"with an AUROC of {ci(cbest1.AUROC)}.")
     oc = inc[inc.comparison.str.startswith("C") & (inc.task == "regression")]
-    txt = (f"Adding exposure known at forecast time did not improve any model at either horizon: "
-           f"1-year MAE changed by {r1.delta.min():+.2f} to {r1.delta.max():+.2f} percentage points (worse) and AUROC by "
-           f"{c1.delta.min():+.3f} to {c1.delta.max():+.3f} (eTable 7 and eFigure 2 in Supplement 1), nor did realized outcome-year "
-           f"exposure (MAE change {oc.delta.min():+.2f} to {oc.delta.max():+.2f}).")
+    n["res_2b_2"] = ("Adding shortage exposure did not improve these forecasts for any model type or forecast horizon, even "
+                     "when the exposure that actually occurred in the outcome year was used or, in a post hoc analysis, when "
+                     "exposure was expressed relative to other hospitals in the same year (eTables 6-8 and eFigure 2 in "
+                     "Supplement 1).")
     post = OUT / "aim2" / "forecast_incremental_value_posthoc_relative.csv"
     if post.exists():
         pr = pd.read_csv(post)
-        prr, prc = pr[(pr.task == "regression") & (pr.horizon == 1)], pr[(pr.task == "classification") & (pr.horizon == 1)]
-        txt += (f" Exposure relative to other hospitals in the same year (post hoc) changed MAE by {prr.delta.min():+.2f} to "
-                f"{prr.delta.max():+.2f} percentage points and AUROC by {prc.delta.min():+.3f} to {prc.delta.max():+.3f}.")
+        prr = pr[(pr.task == "regression") & (pr.horizon == 1)]
         n["posthoc_mae_range"] = f"{prr.delta.min():+.2f} to {prr.delta.max():+.2f}"
-    rr = pd.read_csv(OUT / "aim2" / "rolling_origin.csv") if (OUT / "aim2" / "rolling_origin.csv").exists() else None
-    if rr is not None:
-        g1 = rr[(rr.task == "regression") & (rr.feature_set.str.startswith("A")) & ~rr.model.str.startswith("Reference")]
-        best_by_year = g1.groupby("test_year")["MAE"].min()
-        txt += (f" In rolling-origin testing, 1-year MAE ranged from {best_by_year.min():.1f} to "
-                f"{best_by_year.max():.1f} percentage points (largest in {int(best_by_year.idxmax())}; eTable 8 in Supplement 1).")
-    n["res_2b_2"] = txt
     n["abs_2b"] = (f"Next-year operating margin was forecast with a mean absolute error of {ci_text(best1.MAE_pp)[0]} percentage points "
                    f"(persistence, {ci_text(pers1.MAE_pp)[0]}) and operating loss with an AUROC of {ci_text(cbest1.AUROC)[0]}; adding shortage "
                    f"exposure did not improve either forecast.")
