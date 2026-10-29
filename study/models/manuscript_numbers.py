@@ -42,6 +42,8 @@ def main():
     n["a1_base_rate"] = f"{100 * a.prevalence:.1f}"
     n["a1_all_n"], n["a1_all_events"] = f"{int(a.n):,}", f"{int(a.events):,}"
     n["a1_new_n"], n["a1_new_events"] = f"{int(h.n):,}", f"{int(h.events):,}"
+    summ = json.loads((OUT / "aim1" / "summary.json").read_text())
+    n["a1_dev_n"], n["a1_dev_events"] = f"{summ['n_dev']:,}", f"{summ['dev_events']:,}"
     n["a1_test_years"] = "January 2022 to January 2025"
     n["n_onsets"] = "680"
     n["a1_linked_listings"] = "582"
@@ -96,11 +98,11 @@ def main():
     mae_rng = reg[(reg.horizon == 1) & ~reg.model.str.startswith("Reference")]["MAE_est"]
     ci = lambda s: ci_text(s)[1]
     n["res_2b_1"] = (
-        f"Using financial and operating history alone (feature set A), next-year operating margin in held-out hospitals "
+        f"Using financial and operating history alone (set A), next-year operating margin in held-out hospitals "
         f"was forecast by {best1.model.lower()} with an MAE of {ci_text(best1.MAE_pp)[0]} percentage points "
         f"({ci(best1.MAE_pp)[len(ci_text(best1.MAE_pp)[0]) + 2:-1]}) and an R² of {float(best1.R2.split()[0]):.2f}, "
         f"compared with {ci_text(pers1.MAE_pp)[0]} percentage points and {float(pers1.R2.split()[0]):.2f} for the persistence "
-        f"forecast; the 3 model classes performed similarly (MAE {mae_rng.min():.2f}-{mae_rng.max():.2f}). An operating loss "
+        f"forecast (all 3 model classes, MAE {mae_rng.min():.2f}-{mae_rng.max():.2f}). An operating loss "
         f"the next year was predicted with an AUROC of {ci(cbest1.AUROC)} by {cbest1.model.lower()}, similar to the "
         f"persistence reference ({ci_text(cpers1.AUROC)[0]}). At 2 years, the MAE was {ci_text(best2.MAE_pp)[0]} vs {ci_text(pers2.MAE_pp)[0]} for persistence "
         f"(eTable 6 in Supplement 1).")
@@ -108,25 +110,23 @@ def main():
     r1 = i1[i1.task == "regression"]
     c1 = i1[i1.task == "classification"]
     oc = inc[inc.comparison.str.startswith("C") & (inc.task == "regression")]
-    txt = (f"Adding shortage exposure known at the time of the forecast did not improve forecasts for any model class or horizon: "
+    txt = (f"Adding exposure known at forecast time did not improve any model at either horizon: "
            f"1-year MAE changed by {r1.delta.min():+.2f} to {r1.delta.max():+.2f} percentage points (worse) and AUROC by "
-           f"{c1.delta.min():+.3f} to {c1.delta.max():+.3f} (Figure 2; eTable 7 in Supplement 1). Even the realized exposure in the outcome year, "
-           f"which could not be known in advance, did not help (MAE change {oc.delta.min():+.2f} to {oc.delta.max():+.2f}).")
+           f"{c1.delta.min():+.3f} to {c1.delta.max():+.3f} (eTable 7 and eFigure 2 in Supplement 1), nor did realized outcome-year "
+           f"exposure (MAE change {oc.delta.min():+.2f} to {oc.delta.max():+.2f}).")
     post = OUT / "aim2" / "forecast_incremental_value_posthoc_relative.csv"
     if post.exists():
         pr = pd.read_csv(post)
         prr, prc = pr[(pr.task == "regression") & (pr.horizon == 1)], pr[(pr.task == "classification") & (pr.horizon == 1)]
-        txt += (f" In a post hoc analysis expressing exposure relative to other hospitals in the same year, which removes the "
-                f"national trend that rose beyond its training range in 2022-2024, the changes were {prr.delta.min():+.2f} to "
-                f"{prr.delta.max():+.2f} percentage points in MAE and {prc.delta.min():+.3f} to {prc.delta.max():+.3f} in AUROC.")
+        txt += (f" Exposure relative to other hospitals in the same year (post hoc) changed MAE by {prr.delta.min():+.2f} to "
+                f"{prr.delta.max():+.2f} percentage points and AUROC by {prc.delta.min():+.3f} to {prc.delta.max():+.3f}.")
         n["posthoc_mae_range"] = f"{prr.delta.min():+.2f} to {prr.delta.max():+.2f}"
     rr = pd.read_csv(OUT / "aim2" / "rolling_origin.csv") if (OUT / "aim2" / "rolling_origin.csv").exists() else None
     if rr is not None:
         g1 = rr[(rr.task == "regression") & (rr.feature_set.str.startswith("A")) & ~rr.model.str.startswith("Reference")]
         best_by_year = g1.groupby("test_year")["MAE"].min()
-        txt += (f" In the rolling-origin analysis, the best model's 1-year MAE ranged from {best_by_year.min():.1f} to "
-                f"{best_by_year.max():.1f} percentage points across test years 2020-2024, with the largest errors in "
-                f"{int(best_by_year.idxmax())} (eTable 8 in Supplement 1).")
+        txt += (f" In rolling-origin testing, 1-year MAE ranged from {best_by_year.min():.1f} to "
+                f"{best_by_year.max():.1f} percentage points (largest in {int(best_by_year.idxmax())}; eTable 8 in Supplement 1).")
     n["res_2b_2"] = txt
     n["abs_2b"] = (f"Next-year operating margin was forecast with a mean absolute error of {ci_text(best1.MAE_pp)[0]} percentage points "
                    f"(persistence, {ci_text(pers1.MAE_pp)[0]}) and operating loss with an AUROC of {ci_text(cbest1.AUROC)[0]}; adding shortage "
