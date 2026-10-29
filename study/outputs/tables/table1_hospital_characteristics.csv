@@ -1,0 +1,19 @@
+,All,Low exposure tertile,Middle exposure tertile,High exposure tertile
+"Hospitals, No.","3,191","1,064","1,063","1,064"
+"Hospital-years, No.","26,597","8,048","9,246","9,303"
+"Exposure index, mean (SD)",212.6 (28.5),185.5 (19.5),212.1 (4.8),240.3 (23.2)
+"Beds, median (IQR)",139 (64-260),106 (45-200),151 (81-272),165 (83-304)
+"Health system member, No. (%)","2,519 (78.9)",757 (71.1),881 (82.9),881 (82.8)
+"Ownership, No. (%)",,,,
+   For-profit,825 (25.9),291 (27.3),284 (26.7),250 (23.5)
+   Government,474 (14.9),190 (17.9),148 (13.9),136 (12.8)
+   Nonprofit,"1,892 (59.3)",583 (54.8),631 (59.4),678 (63.7)
+"Rural, No. (%)",830 (26.0),371 (34.9),252 (23.7),207 (19.5)
+"Teaching, No. (%)","1,124 (35.2)",294 (27.6),388 (36.5),442 (41.5)
+"Medicaid share of inpatient days, median (IQR), %",6.2 (3.0-11.9),6.2 (2.9-13.0),6.3 (3.3-11.9),6.2 (3.0-11.1)
+"Medicare share of inpatient days, median (IQR), %",32.8 (25.2-41.0),35.2 (26.3-44.2),32.4 (25.0-39.5),31.7 (24.8-39.2)
+"ICU share of inpatient days at baseline, median (IQR), %",11.4 (7.3-16.3),8.0 (0.0-11.9),12.2 (8.7-16.6),14.4 (9.8-19.8)
+"Perioperative share of direct costs at baseline, median (IQR), %",5.0 (3.7-6.6),3.9 (2.7-5.3),5.1 (4.1-6.5),5.9 (4.5-7.7)
+"Annual drug expense, median (IQR), $ million",9.0 (3.0-22.0),4.8 (1.3-14.6),9.3 (3.9-20.7),13.7 (4.9-29.3)
+"Drug expense per adjusted patient day, median (IQR), $",148 (100-238),134 (84-217),143 (103-226),171 (115-269)
+"Operating margin, median (IQR), %",-2.1 (-10.5 to 6.2),-5.1 (-15.8 to 2.7),-1.3 (-8.7 to 6.8),-0.1 (-7.2 to 8.7)

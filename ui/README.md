@@ -1,29 +1,28 @@
 # Drug Shortage Platform UI
 
-Interactive web interface for generic drug shortage prediction and hospital net income forecasting.
+Web demo of the revised study in [`../study`](../study/README.md). It is a static Next.js site: all model outputs
+are precomputed JSON in `public/data/`, so there is no Python runtime or serverless function to deploy.
 
-**Page title:** Building Models to Tackle Generic Drug Shortages in the US
+## Tabs
 
-## Features
+- **Shortage Watch List** — 6-month probability of a new ASHP shortage listing for every generic product priced in
+  NADAC in August 2025 (the last month with known shortage status), from the penalized logistic regression validated
+  on held-out drugs and years. The "what if" panel recomputes risk in the browser from the exported coefficients
+  (`lib/riskModel.ts`).
+- **Hospital Explorer** — each hospital's shortage exposure index (FY2016-2024), the drug expense associated with
+  being above or below the national average (within-hospital fixed-effects estimate), and a next-year operating margin
+  and loss forecast (gradient-boosted trees on financial history; exposure did not improve forecasts).
+- **Methods & Validation** — held-out performance and the comparison with the original, leaky design.
 
-- **Shortage Prediction** — Enter drug acquisition cost, manufacturer count, ingredients, dosage forms, and formulation type. Returns `shortage_flag` and shortage probability from the EnsembleTop3 classifier.
-- **Net Income Prediction** — Enter all 15 model features (with automatic nonlinear transforms). Returns predicted hospital Net Income in dollars.
-- **Model Methodology** — Synopsis of outlier removal, information gain, cross-correlation analysis, and model performance for both pipelines.
+## Updating the data
 
-## Local Development
-
-### 1. Export inference models (required once, or after retraining)
-
-From the repository root:
+After re-running the study pipeline, regenerate the JSON from the repository root:
 
 ```bash
-pip install -r requirements.txt imbalanced-learn joblib
-python scripts/export_inference_models.py
+cd study && python models/export_web_demo.py
 ```
 
-This writes serialized models to `ui/models/`.
-
-### 2. Run the UI
+## Local development
 
 ```bash
 cd ui
@@ -31,49 +30,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open http://localhost:3000.
 
-> **Important:** Predictions require Python serverless functions. Use `vercel dev` (not plain `next dev`) so `/api/shortage` and `/api/income` work locally:
+## Deploy (Vercel)
 
-```bash
-npm i -g vercel
-cd ui
-vercel dev
-```
-
-The UI calls Python serverless functions directly at `/api/py-shortage` and `/api/py-income`.
-
-## Deploy to Vercel
-
-1. Push the repository to GitHub.
-2. Import the project in [Vercel](https://vercel.com/new).
-3. Set the **Root Directory** to `ui`.
-4. Ensure model artifacts exist in `ui/models/` (run the export script before deploying, and commit the `.pkl` files).
-5. Deploy — Vercel auto-detects Next.js and Python functions in `api/`.
-
-### Environment
-
-No environment variables required. Models are loaded from `ui/models/` at runtime.
-
-## Project Structure
-
-```
-ui/
-├── app/                  # Next.js App Router pages
-├── api/                  # Python serverless prediction endpoints
-│   ├── shortage.py
-│   ├── income.py
-│   └── _inference.py
-├── components/           # React components
-├── lib/                  # Types and model methodology content
-├── models/               # Serialized ML artifacts (generated)
-├── requirements.txt      # Python dependencies for Vercel
-└── vercel.json
-```
-
-## Models
-
-| Tab | Model | Source |
-|-----|-------|--------|
-| Shortage | EnsembleTop3 (ExtraTrees + RandomForest + GradientBoosting) | `drug_shortage_timeline_prediction/` |
-| Net Income | RandomForestRegressor | `drug_shortage_cost_prediction/` |
+Set the Vercel project's root directory to `ui/`. The build is a standard Next.js static build (`next build`);
+no environment variables or Python dependencies are required.

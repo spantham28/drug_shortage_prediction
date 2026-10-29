@@ -1,0 +1,13 @@
+horizon,task,feature_set,model,n,MAE_pp,RMSE_pp,R2,MAE_est,R2_est,events,AUROC,AUPRC,Brier,AUROC_est,cal_intercept,cal_slope
+1,regression,B-rel: + hospital-relative exposure,Penalized linear,1646,6.80 (6.33 to 7.29),10.69 (9.67 to 11.77),0.698 (0.642 to 0.746),6.799950624095586,0.69805313294345,,,,,,,
+1,regression,B-rel: + hospital-relative exposure,Gradient-boosted trees,1646,6.64 (6.15 to 7.15),10.63 (9.58 to 11.66),0.701 (0.648 to 0.748),6.6395921247021725,0.7012222190396307,,,,,,,
+1,regression,B-rel: + hospital-relative exposure,Neural network (MLP),1646,7.16 (6.68 to 7.66),11.06 (10.02 to 12.12),0.677 (0.619 to 0.729),7.155959503800243,0.6766990055769091,,,,,,,
+1,classification,B-rel: + hospital-relative exposure,Penalized linear,1646,,,,,,939.0,0.930 (0.914 to 0.944),0.930 (0.909 to 0.948),0.1021 (0.0914 to 0.1128),0.9298013324837733,0.08359010603856329,1.0324657311636667
+1,classification,B-rel: + hospital-relative exposure,Gradient-boosted trees,1646,,,,,,939.0,0.932 (0.917 to 0.946),0.942 (0.927 to 0.955),0.1000 (0.0882 to 0.1115),0.9320818891565104,-0.00422348437773171,1.1101581294913148
+1,classification,B-rel: + hospital-relative exposure,Neural network (MLP),1646,,,,,,939.0,0.919 (0.902 to 0.935),0.926 (0.906 to 0.944),0.1118 (0.0990 to 0.1242),0.9187239125555641,0.23041301107894427,0.8666243353695119
+2,regression,B-rel: + hospital-relative exposure,Penalized linear,1641,8.20 (7.65 to 8.79),12.33 (11.29 to 13.48),0.592 (0.509 to 0.652),8.197897316402587,0.5916295511969136,,,,,,,
+2,regression,B-rel: + hospital-relative exposure,Gradient-boosted trees,1641,8.24 (7.69 to 8.82),12.22 (11.24 to 13.27),0.598 (0.530 to 0.651),8.237408542056532,0.598311740729065,,,,,,,
+2,regression,B-rel: + hospital-relative exposure,Neural network (MLP),1641,8.76 (8.23 to 9.34),12.83 (11.71 to 14.08),0.558 (0.473 to 0.628),8.763145217225189,0.557665828434167,,,,,,,
+2,classification,B-rel: + hospital-relative exposure,Penalized linear,1641,,,,,,931.0,0.893 (0.873 to 0.913),0.894 (0.865 to 0.921),0.1317 (0.1205 to 0.1430),0.8929955673892982,0.020075851536400617,1.2223484493023704
+2,classification,B-rel: + hospital-relative exposure,Gradient-boosted trees,1641,,,,,,931.0,0.899 (0.880 to 0.917),0.910 (0.887 to 0.930),0.1272 (0.1152 to 0.1396),0.8987640126473124,-0.17518297460782373,1.285108641349461
+2,classification,B-rel: + hospital-relative exposure,Neural network (MLP),1641,,,,,,931.0,0.876 (0.852 to 0.898),0.879 (0.847 to 0.907),0.1394 (0.1255 to 0.1536),0.8758853875130481,0.09981103854227656,0.8637540024156478

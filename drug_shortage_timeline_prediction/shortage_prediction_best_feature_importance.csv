@@ -1,0 +1,6 @@
+model,feature,native_importance,native_importance_method,permutation_importance_mean,permutation_importance_std,rank_by_permutation
+EnsembleTop3,avg_nadac,,not_available,0.22985553479620496,0.008308523969280003,1
+EnsembleTop3,num_forms,,not_available,0.1911305122701012,0.008253125428651158,2
+EnsembleTop3,ingredient_num,,not_available,0.12820748529177925,0.008908452576973258,3
+EnsembleTop3,manufacturer_num,,not_available,0.09813646181162872,0.006087058796052248,4
+EnsembleTop3,liquid_flag,,not_available,0.08381582260030739,0.007863191895483207,5

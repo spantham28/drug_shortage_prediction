@@ -20,11 +20,15 @@ from sklearn.metrics import (
     f1_score,
     confusion_matrix,
 )
+from sklearn.base import BaseEstimator, ClassifierMixin
 from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 from datetime import datetime
 import statsmodels.api as sm
+from pathlib import Path
+
+OUTPUT_DIR = Path("/Users/janakipantham/Desktop/drug_shortage_platform/drug_shortage_timeline_prediction")
 
 def create_stratified_bins(y, n_bins=2):
     """Create stratified labels based on binary target 'shortage_flag' (0/1)."""
@@ -404,6 +408,203 @@ def hyperparameter_tuning(X_train, y_train, model_name, cv_strategy, n_iter=20):
         print("  Using default parameters...")
         return None, None, None
 
+
+def predict_scores_and_labels(model, X, model_name, threshold=0.5, ensemble_members=None, model_results=None):
+    """Return probability-like scores and binary labels for any supported model."""
+    if model_name == 'EnsembleTop3' and ensemble_members and model_results:
+        scores_stack = np.vstack([
+            predict_scores_and_labels(
+                model_results[name]['model'],
+                X,
+                name,
+                threshold=model_results[name]['best_threshold'],
+            )[0]
+            for name in ensemble_members
+        ])
+        proba = np.mean(scores_stack, axis=0)
+        labels = (proba >= threshold).astype(int)
+        return proba, labels
+    if model_name == 'Probit':
+        X_const = sm.add_constant(X, has_constant='add')
+        proba = model.predict(X_const)
+        proba = np.clip(proba, 0.0, 1.0)
+        labels = (proba >= threshold).astype(int)
+        return proba, labels
+    if hasattr(model, 'predict_proba'):
+        proba = model.predict_proba(X)[:, 1]
+        labels = (proba >= threshold).astype(int)
+        return proba, labels
+    if hasattr(model, 'decision_function'):
+        scores = model.decision_function(X)
+        proba = 1.0 / (1.0 + np.exp(-scores))
+        labels = (proba >= threshold).astype(int)
+        return proba, labels
+    preds = model.predict(X)
+    proba = np.clip(preds, 0.0, 1.0)
+    labels = (proba >= threshold).astype(int)
+    return proba, labels
+
+
+class PredictionWrapper(BaseEstimator, ClassifierMixin):
+    """Sklearn-compatible wrapper for permutation importance on any supported model."""
+
+    _estimator_type = "classifier"
+
+    def __init__(
+        self,
+        model=None,
+        model_name=None,
+        threshold=0.5,
+        ensemble_members=None,
+        model_results=None,
+        feature_names=None,
+    ):
+        self.model = model
+        self.model_name = model_name
+        self.threshold = threshold
+        self.ensemble_members = ensemble_members
+        self.model_results = model_results
+        self.feature_names = feature_names
+
+    def fit(self, X, y):
+        self.classes_ = np.unique(y)
+        return self
+
+    def _to_dataframe(self, X):
+        if isinstance(X, pd.DataFrame):
+            return X
+        return pd.DataFrame(X, columns=self.feature_names)
+
+    def predict_proba(self, X):
+        X_df = self._to_dataframe(X)
+        proba, _ = predict_scores_and_labels(
+            self.model,
+            X_df,
+            self.model_name,
+            threshold=self.threshold,
+            ensemble_members=self.ensemble_members,
+            model_results=self.model_results,
+        )
+        proba = np.asarray(proba, dtype=float)
+        return np.column_stack([1.0 - proba, proba])
+
+    def predict(self, X):
+        X_df = self._to_dataframe(X)
+        _, labels = predict_scores_and_labels(
+            self.model,
+            X_df,
+            self.model_name,
+            threshold=self.threshold,
+            ensemble_members=self.ensemble_members,
+            model_results=self.model_results,
+        )
+        return np.asarray(labels, dtype=int)
+
+
+def extract_native_feature_importance(model, feature_names, model_name):
+    """Extract model-native feature importance when available."""
+    importances = {feature: np.nan for feature in feature_names}
+
+    if hasattr(model, 'feature_importances_'):
+        for feature, value in zip(feature_names, model.feature_importances_):
+            importances[feature] = float(value)
+        return importances, 'feature_importances_'
+
+    if model_name == 'Probit':
+        for feature in feature_names:
+            if feature in model.params.index:
+                importances[feature] = float(abs(model.params[feature]))
+        return importances, 'abs_coefficient'
+
+    if hasattr(model, 'coef_'):
+        coef = model.coef_
+        if coef.ndim > 1:
+            coef = coef[0]
+        for feature, value in zip(feature_names, coef):
+            importances[feature] = float(abs(value))
+        return importances, 'abs_coefficient'
+
+    return importances, None
+
+
+def compute_permutation_feature_importance(
+    model,
+    X,
+    y,
+    feature_names,
+    model_name,
+    threshold=0.5,
+    ensemble_members=None,
+    model_results=None,
+    n_repeats=10,
+):
+    """Measure each feature's impact on test-set ROC AUC via permutation."""
+    wrapped_model = PredictionWrapper(
+        model=model,
+        model_name=model_name,
+        threshold=threshold,
+        ensemble_members=ensemble_members,
+        model_results=model_results,
+        feature_names=feature_names,
+    ).fit(X, y)
+
+    def score(X_eval):
+        try:
+            return roc_auc_score(y, wrapped_model.predict_proba(X_eval)[:, 1])
+        except ValueError:
+            return accuracy_score(y, wrapped_model.predict(X_eval))
+
+    X_values = X.values if isinstance(X, pd.DataFrame) else np.asarray(X)
+    baseline = score(X_values)
+    rng = np.random.RandomState(42)
+    n_features = len(feature_names)
+    importances = np.zeros((n_features, n_repeats), dtype=float)
+
+    for feature_idx in range(n_features):
+        for repeat_idx in range(n_repeats):
+            X_perm = X_values.copy()
+            rng.shuffle(X_perm[:, feature_idx])
+            importances[feature_idx, repeat_idx] = baseline - score(X_perm)
+
+    return importances.mean(axis=1), importances.std(axis=1)
+
+
+def build_feature_importance_dataframe(
+    model,
+    X_test,
+    y_test,
+    feature_names,
+    model_name,
+    threshold=0.5,
+    ensemble_members=None,
+    model_results=None,
+):
+    """Combine native and permutation-based feature importance for one model."""
+    native_values, native_method = extract_native_feature_importance(model, feature_names, model_name)
+    perm_mean, perm_std = compute_permutation_feature_importance(
+        model,
+        X_test,
+        y_test,
+        feature_names,
+        model_name,
+        threshold=threshold,
+        ensemble_members=ensemble_members,
+        model_results=model_results,
+    )
+
+    importance_df = pd.DataFrame({
+        'feature': feature_names,
+        'native_importance': [native_values[feature] for feature in feature_names],
+        'native_importance_method': native_method if native_method else 'not_available',
+        'permutation_importance_mean': perm_mean,
+        'permutation_importance_std': perm_std,
+    })
+    importance_df['rank_by_permutation'] = (
+        importance_df['permutation_importance_mean'].rank(ascending=False, method='dense').astype(int)
+    )
+    return importance_df.sort_values('permutation_importance_mean', ascending=False).reset_index(drop=True)
+
+
 def main():
     print("=== Drug Shortage Prediction Model with Hyperparameter Tuning ===")
     print("Using Stratified Data Splitting and Multiple Model Selection")
@@ -411,7 +612,7 @@ def main():
     
     # Load data
     print("\n1. Loading data...")
-    df = pd.read_csv("/Users/janakipantham/Desktop/drug_shortage_platform/drug_shortage_timeline_prediction/price_signals_complete.csv")
+    df = pd.read_csv(OUTPUT_DIR / "price_signals_complete.csv")
     print(f"Original dataset shape: {df.shape}")
     
     # Data exploration
@@ -554,29 +755,9 @@ def main():
         if model_name in ['Probit', 'LPM']:
             threshold = cv_optimal_threshold(X_train_scaled, y_train.astype(int), model_name)
 
-        # Prediction helper
-        def predict_scores_and_labels(model, X, model_name_local, threshold_local=0.5):
-            if model_name_local == 'Probit':
-                X_const = sm.add_constant(X, has_constant='add')
-                proba = model.predict(X_const)
-                proba = np.clip(proba, 0.0, 1.0)
-                labels = (proba >= threshold_local).astype(int)
-                return proba, labels
-            if hasattr(model, 'predict_proba'):
-                proba = model.predict_proba(X)[:, 1]
-                labels = (proba >= threshold_local).astype(int)
-                return proba, labels
-            if hasattr(model, 'decision_function'):
-                scores = model.decision_function(X)
-                proba = 1.0 / (1.0 + np.exp(-scores))
-                labels = (proba >= threshold_local).astype(int)
-                return proba, labels
-            preds = model.predict(X)
-            proba = np.clip(preds, 0.0, 1.0)
-            labels = (proba >= threshold_local).astype(int)
-            return proba, labels
-
-        y_score, y_pred = predict_scores_and_labels(fitted_model, X_test_scaled, model_name, threshold_local=threshold)
+        y_score, y_pred = predict_scores_and_labels(
+            fitted_model, X_test_scaled, model_name, threshold=threshold
+        )
 
         # Metrics
         accuracy = accuracy_score(y_test, y_pred)
@@ -679,50 +860,61 @@ def main():
     accuracy = best_results['test_accuracy']
     roc_auc = best_results['test_roc_auc']
     
-    # Feature importance (only for models that support it)
-    print(f"\n9. Feature Importance Analysis:")
-    if hasattr(best_model, 'feature_importances_'):
-        importances = best_model.feature_importances_
-        feature_importance = pd.DataFrame({
-            'feature': features,
-            'importance': importances
-        }).sort_values('importance', ascending=False)
-        
-        print("Top 15 most important features:")
-        for i, row in feature_importance.head(15).iterrows():
-            print(f"  {row['feature']}: {row['importance']:.4f}")
-        
-        # Shortage-specific feature importance
-        shortage_features = [f for f in features if 'shortage' in f.lower()]
-        shortage_importance = feature_importance[feature_importance['feature'].isin(shortage_features)]
-        
-        print(f"\nShortage-specific features ({len(shortage_features)} total):")
-        for i, row in shortage_importance.head(10).iterrows():
-            print(f"  {row['feature']}: {row['importance']:.4f}")
-    else:
-        print("Feature importance not available for this model type")
-        feature_importance = None
-        shortage_features = [f for f in features if 'shortage' in f.lower()]
+    # Feature importance: permutation impact on test predictions (+ native where available)
+    print(f"\n9. Feature Importance Analysis (best model: {best_model_name}):")
+    ensemble_members = None
+    if best_model_name == 'EnsembleTop3':
+        ensemble_members = best_results['best_params']['members']
+
+    feature_importance = build_feature_importance_dataframe(
+        best_model,
+        X_test_scaled,
+        y_test,
+        features,
+        best_model_name,
+        threshold=best_results['best_threshold'],
+        ensemble_members=ensemble_members,
+        model_results=model_results,
+    )
+    feature_importance.insert(0, 'model', best_model_name)
+
+    print("Feature importance (sorted by permutation impact on test ROC AUC):")
+    for _, row in feature_importance.iterrows():
+        native_text = (
+            f"{row['native_importance']:.4f}"
+            if pd.notna(row['native_importance'])
+            else 'n/a'
+        )
+        print(
+            f"  {row['feature']}: permutation={row['permutation_importance_mean']:.4f} "
+            f"(+/- {row['permutation_importance_std']:.4f}), native={native_text}"
+        )
+
+    shortage_features = [f for f in features if 'shortage' in f.lower()]
     
     # Save results
     print("\n10. Saving results...")
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
     # Save best model and scaler (skip saving None for ensemble)
     import joblib
+    best_model_path = OUTPUT_DIR / "best_shortage_prediction_model.pkl"
+    scaler_path = OUTPUT_DIR / "best_shortage_prediction_scaler.pkl"
     if best_model is not None:
-        joblib.dump(best_model, 'best_shortage_prediction_model.pkl')
-    joblib.dump(scaler, 'best_shortage_prediction_scaler.pkl')
+        joblib.dump(best_model, best_model_path)
+    joblib.dump(scaler, scaler_path)
     
-    # Save feature importance if available
-    if feature_importance is not None:
-        feature_importance.to_csv('shortage_prediction_best_feature_importance.csv', index=False)
+    # Save feature importance (always available via permutation importance)
+    feature_importance_path = OUTPUT_DIR / "shortage_prediction_best_feature_importance.csv"
+    feature_importance.to_csv(feature_importance_path, index=False)
     
     # Save validation predictions
     val_df = pd.DataFrame(X_test_scaled, columns=features)
     val_df['shortage_flag_true'] = y_test.values
     val_df['shortage_flag_pred'] = y_pred
     val_df['shortage_score'] = y_score
-    val_df.to_csv('shortage_prediction_best_validation_predictions.csv', index=False)
+    validation_predictions_path = OUTPUT_DIR / "shortage_prediction_best_validation_predictions.csv"
+    val_df.to_csv(validation_predictions_path, index=False)
 
     # Two-way contingency table and classification metrics (test set)
     y_test_arr = np.asarray(y_test).astype(int)
@@ -754,7 +946,7 @@ def main():
             ],
         }
     )
-    contingency_table_path = 'shortage_prediction_test_contingency_table.csv'
+    contingency_table_path = OUTPUT_DIR / "shortage_prediction_test_contingency_table.csv"
     with open(contingency_table_path, 'w') as f:
         f.write('Two-way contingency table (test set)\n')
         contingency_df.to_csv(f)
@@ -838,7 +1030,7 @@ def main():
         ]
     )
 
-    results_summary_path = 'shortage_prediction_results.csv'
+    results_summary_path = OUTPUT_DIR / "shortage_prediction_results.csv"
     with open(results_summary_path, 'w') as f:
         f.write('Run summary\n')
         run_summary_df.to_csv(f, index=False)
@@ -852,13 +1044,13 @@ def main():
         class_distribution_df.to_csv(f, index=False)
     
     print("\nResults saved to:")
-    print("- best_shortage_prediction_model.pkl (best model)")
-    print("- best_shortage_prediction_scaler.pkl (scaler)")
-    if feature_importance is not None:
-        print("- shortage_prediction_best_feature_importance.csv (feature importance)")
-    print("- shortage_prediction_best_validation_predictions.csv (validation predictions)")
-    print("- shortage_prediction_test_contingency_table.csv (test contingency table and metrics)")
-    print("- shortage_prediction_results.csv (results summary)")
+    if best_model is not None:
+        print(f"- {best_model_path} (best model)")
+    print(f"- {scaler_path} (scaler)")
+    print(f"- {feature_importance_path} (feature importance)")
+    print(f"- {validation_predictions_path} (validation predictions)")
+    print(f"- {contingency_table_path} (test contingency table and metrics)")
+    print(f"- {results_summary_path} (results summary)")
     
     print(f"\n=== Analysis completed at: {datetime.now()} ===")
     print(f"Best Model: {best_model_name}")

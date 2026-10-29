@@ -1,0 +1,4 @@
+model,cv_auroc,best_params
+Penalized linear,0.6110500365510126,"{""model__C"": 0.0013241836485847406, ""model__penalty"": ""l2""}"
+Gradient-boosted trees,0.6707367325353178,"{""colsample_bytree"": 0.6737738114486694, ""learning_rate"": 0.07787253647979221, ""max_depth"": 6, ""min_child_weight"": 10.894226454863462, ""n_estimators"": 553, ""reg_lambda"": 19.264649104541807, ""subsample"": 0.9132768472771814}"
+Neural network (MLP),0.6545548335493269,"{""model__alpha"": 1.2565678867283762e-05, ""model__batch_size"": 512, ""model__hidden_layer_sizes"": [32, 16], ""model__learning_rate_init"": 0.002688585628736807}"

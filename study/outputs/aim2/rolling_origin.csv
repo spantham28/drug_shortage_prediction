@@ -1,0 +1,71 @@
+test_year,task,feature_set,model,n_train,n_test,MAE,RMSE,R2,AUROC,AUPRC,Brier
+2020,regression,A: financial/operating history,Penalized linear,6996,567,8.126361135740828,12.343685474948163,0.6149012157813449,,,
+2020,regression,A: financial/operating history,Gradient-boosted trees,6996,567,8.14961506399372,12.43487300683498,0.6091904552188994,,,
+2020,regression,A: financial/operating history,Neural network (MLP),6996,567,8.54412039423087,12.889790147647293,0.5800726637308311,,,
+2020,regression,B: + shortage exposure known at forecast,Penalized linear,6996,567,8.54496315444999,12.681304182722634,0.5935470375457625,,,
+2020,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,6996,567,8.240286523479675,12.560199829814987,0.6012730861428619,,,
+2020,regression,B: + shortage exposure known at forecast,Neural network (MLP),6996,567,9.532485838773086,13.975494048207233,0.5063526698359408,,,
+2020,regression,reference,Reference: persistence,6996,567,8.278484738266648,12.733052826095252,0.5902230411157717,,,
+2020,classification,A: financial/operating history,Penalized linear,6996,567,,,,0.9278144820295982,0.9515283194988697,0.13020790619660963
+2020,classification,A: financial/operating history,Gradient-boosted trees,6996,567,,,,0.9274048625792811,0.9454085869916142,0.13238509179857794
+2020,classification,A: financial/operating history,Neural network (MLP),6996,567,,,,0.9265988372093023,0.9514338926446158,0.14091447546040006
+2020,classification,B: + shortage exposure known at forecast,Penalized linear,6996,567,,,,0.9275105708245244,0.9512539863245891,0.1362950270836457
+2020,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,6996,567,,,,0.9312499999999999,0.9491804631429226,0.1383232696427899
+2020,classification,B: + shortage exposure known at forecast,Neural network (MLP),6996,567,,,,0.9202034883720931,0.9449051381420415,0.13795944683283337
+2020,classification,reference,Reference: persistence,6996,567,,,,0.916252642706131,0.9432800898750668,0.13736293493633117
+2021,regression,A: financial/operating history,Penalized linear,9291,559,7.559665316387243,10.349178681332813,0.698689534898716,,,
+2021,regression,A: financial/operating history,Gradient-boosted trees,9291,559,8.402222026175043,11.424653838644165,0.6328119443767393,,,
+2021,regression,A: financial/operating history,Neural network (MLP),9291,559,7.885350810110018,10.75236236193284,0.674755299204313,,,
+2021,regression,B: + shortage exposure known at forecast,Penalized linear,9291,559,9.48226878877786,11.961683235926042,0.5974803927613324,,,
+2021,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,9291,559,9.789116293871118,12.544993247786252,0.5572655575258953,,,
+2021,regression,B: + shortage exposure known at forecast,Neural network (MLP),9291,559,9.616801107978702,12.309971291556016,0.5736988290127922,,,
+2021,regression,reference,Reference: persistence,9291,559,7.6557882476023575,11.208257306863393,0.6465901657998914,,,
+2021,classification,A: financial/operating history,Penalized linear,9291,559,,,,0.9210243277848911,0.918973397857164,0.13227549123442053
+2021,classification,A: financial/operating history,Gradient-boosted trees,9291,559,,,,0.9188348271446862,0.9095374983371467,0.14458449086698694
+2021,classification,A: financial/operating history,Neural network (MLP),9291,559,,,,0.9104609475032011,0.9048569544987612,0.14544226301363644
+2021,classification,B: + shortage exposure known at forecast,Penalized linear,9291,559,,,,0.9158514724711908,0.9140072589080995,0.16500506103065868
+2021,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,9291,559,,,,0.9100128040973111,0.8972907017214907,0.17591759571743382
+2021,classification,B: + shortage exposure known at forecast,Neural network (MLP),9291,559,,,,0.8937900128040974,0.8818709096351666,0.19133083862840425
+2021,classification,reference,Reference: persistence,9291,559,,,,0.9155697823303456,0.9138867694474663,0.14392697092456505
+2022,regression,A: financial/operating history,Penalized linear,11584,555,6.759426202702946,10.919516134680892,0.6448795199694833,,,
+2022,regression,A: financial/operating history,Gradient-boosted trees,11584,555,6.862464922483142,10.762473071803008,0.6550206607378894,,,
+2022,regression,A: financial/operating history,Neural network (MLP),11584,555,7.001876159947576,10.898901438302,0.6462191014114606,,,
+2022,regression,B: + shortage exposure known at forecast,Penalized linear,11584,555,7.118992748863051,10.905916441013568,0.6457635375795832,,,
+2022,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,11584,555,8.051953425963182,11.736379082967334,0.5897607705543928,,,
+2022,regression,B: + shortage exposure known at forecast,Neural network (MLP),11584,555,8.592990388637872,12.382195611951817,0.5433701987329309,,,
+2022,regression,reference,Reference: persistence,11584,555,7.289117879339112,11.933568323737688,0.5758596618909951,,,
+2022,classification,A: financial/operating history,Penalized linear,11584,555,,,,0.9172934350488879,0.9117881649584176,0.11303888749993819
+2022,classification,A: financial/operating history,Gradient-boosted trees,11584,555,,,,0.9225448587084989,0.9390518311415553,0.10767643411453942
+2022,classification,A: financial/operating history,Neural network (MLP),11584,555,,,,0.9164070054797464,0.9241900047965245,0.1149486625118948
+2022,classification,B: + shortage exposure known at forecast,Penalized linear,11584,555,,,,0.9164875899860321,0.9115804331056141,0.11663504466630474
+2022,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,11584,555,,,,0.9197109702374556,0.9364021769179992,0.12520701827731023
+2022,classification,B: + shortage exposure known at forecast,Neural network (MLP),11584,555,,,,0.9099333834748039,0.9201323664650035,0.14670388937655196
+2022,classification,reference,Reference: persistence,11584,555,,,,0.9246937788761147,0.9144231832028855,0.11319508401232381
+2023,regression,A: financial/operating history,Penalized linear,13855,548,6.654812216753347,11.039121465800774,0.7142120853651753,,,
+2023,regression,A: financial/operating history,Gradient-boosted trees,13855,548,6.811650017591498,11.284044788527622,0.7013899377681483,,,
+2023,regression,A: financial/operating history,Neural network (MLP),13855,548,7.653531763963666,12.493295697197764,0.6339597242826158,,,
+2023,regression,B: + shortage exposure known at forecast,Penalized linear,13855,548,7.332285664224364,12.008365431177575,0.6618241216665908,,,
+2023,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,13855,548,6.885005036995291,11.372318962672324,0.6966996584444299,,,
+2023,regression,B: + shortage exposure known at forecast,Neural network (MLP),13855,548,7.405481999977479,12.178977042107102,0.6521464346413599,,,
+2023,regression,reference,Reference: persistence,13855,548,6.763248734190718,11.292812804260699,0.7009257008767354,,,
+2023,classification,A: financial/operating history,Penalized linear,13855,548,,,,0.961656080922136,0.9745060030151463,0.08139693303795402
+2023,classification,A: financial/operating history,Gradient-boosted trees,13855,548,,,,0.9538793640250737,0.9666790125617061,0.08409168682745508
+2023,classification,A: financial/operating history,Neural network (MLP),13855,548,,,,0.9477631560740034,0.9639174336075151,0.09166494001560471
+2023,classification,B: + shortage exposure known at forecast,Penalized linear,13855,548,,,,0.9603830240635421,0.973690286378244,0.08218216349271629
+2023,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,13855,548,,,,0.953602612534075,0.9663674664207957,0.0842224655703076
+2023,classification,B: + shortage exposure known at forecast,Neural network (MLP),13855,548,,,,0.9425048777450288,0.9607269002803966,0.09544195341499564
+2023,classification,reference,Reference: persistence,13855,548,,,,0.9540454149196729,0.968094624661396,0.08942916634909721
+2024,regression,A: financial/operating history,Penalized linear,16071,543,6.735846530156647,9.853510432206601,0.7357115479559675,,,
+2024,regression,A: financial/operating history,Gradient-boosted trees,16071,543,6.726044943524714,10.09779959572065,0.7224445749494546,,,
+2024,regression,A: financial/operating history,Neural network (MLP),16071,543,6.8653127381022045,10.034202626049506,0.7259297100486604,,,
+2024,regression,B: + shortage exposure known at forecast,Penalized linear,16071,543,7.084496934323483,10.090217730993793,0.7228612197113844,,,
+2024,regression,B: + shortage exposure known at forecast,Gradient-boosted trees,16071,543,6.604102227910843,10.003210212181516,0.7276201248039642,,,
+2024,regression,B: + shortage exposure known at forecast,Neural network (MLP),16071,543,7.058817614751077,10.116608502045596,0.7214096215425404,,,
+2024,regression,reference,Reference: persistence,16071,543,6.689999194265728,11.141987850934521,0.6620740160934918,,,
+2024,classification,A: financial/operating history,Penalized linear,16071,543,,,,0.9239626950894556,0.9170669610640001,0.11328335611162048
+2024,classification,A: financial/operating history,Gradient-boosted trees,16071,543,,,,0.9315487519712872,0.928334291265394,0.11315339640280063
+2024,classification,A: financial/operating history,Neural network (MLP),16071,543,,,,0.9233645113926804,0.9074126153489864,0.11009399335729443
+2024,classification,B: + shortage exposure known at forecast,Penalized linear,16071,543,,,,0.9235412474849094,0.9171299356647674,0.11634420033015438
+2024,classification,B: + shortage exposure known at forecast,Gradient-boosted trees,16071,543,,,,0.9308554026863887,0.9254732546140769,0.11044206291136115
+2024,classification,B: + shortage exposure known at forecast,Neural network (MLP),16071,543,,,,0.9177225515253684,0.9013333568769358,0.1176987293192684
+2024,classification,reference,Reference: persistence,16071,543,,,,0.9256484855076403,0.9176502416127099,0.1145614554066112
